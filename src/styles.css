@@ -1,0 +1,60 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+body {
+  background: linear-gradient(
+    289deg,
+    #2056db,
+    #db6420,
+    #52f223,
+    #f2ae23,
+    #c311d5,
+    #a15adb,
+    #2fb9e3,
+    #63ee69,
+    #3f28c0,
+    #ea0554,
+    #05ead8,
+    #b0bd00
+  );
+  background-size: 2400% 2400%;
+
+  -webkit-animation: fireBack 159s ease infinite;
+  -moz-animation: fireBack 159s ease infinite;
+  animation: fireBack 159s ease infinite;
+}
+
+@-webkit-keyframes fireBack {
+  0% {
+    background-position: 0% 52%;
+  }
+  50% {
+    background-position: 100% 49%;
+  }
+  100% {
+    background-position: 0% 52%;
+  }
+}
+@-moz-keyframes fireBack {
+  0% {
+    background-position: 0% 52%;
+  }
+  50% {
+    background-position: 100% 49%;
+  }
+  100% {
+    background-position: 0% 52%;
+  }
+}
+@keyframes fireBack {
+  0% {
+    background-position: 0% 52%;
+  }
+  50% {
+    background-position: 100% 49%;
+  }
+  100% {
+    background-position: 0% 52%;
+  }
+}
