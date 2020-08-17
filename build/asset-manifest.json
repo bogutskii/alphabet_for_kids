@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/alphabet_for_kids/static/css/main.ff00412c.chunk.css",
+    "main.js": "/alphabet_for_kids/static/js/main.93e3cb32.chunk.js",
+    "main.js.map": "/alphabet_for_kids/static/js/main.93e3cb32.chunk.js.map",
+    "runtime~main.js": "/alphabet_for_kids/static/js/runtime~main.c665cc28.js",
+    "runtime~main.js.map": "/alphabet_for_kids/static/js/runtime~main.c665cc28.js.map",
+    "static/css/2.afc36f9d.chunk.css": "/alphabet_for_kids/static/css/2.afc36f9d.chunk.css",
+    "static/js/2.bc8d46b7.chunk.js": "/alphabet_for_kids/static/js/2.bc8d46b7.chunk.js",
+    "static/js/2.bc8d46b7.chunk.js.map": "/alphabet_for_kids/static/js/2.bc8d46b7.chunk.js.map",
+    "index.html": "/alphabet_for_kids/index.html",
+    "precache-manifest.78103ea155c6699da33a99deeb7f50ae.js": "/alphabet_for_kids/precache-manifest.78103ea155c6699da33a99deeb7f50ae.js",
+    "service-worker.js": "/alphabet_for_kids/service-worker.js",
+    "static/css/2.afc36f9d.chunk.css.map": "/alphabet_for_kids/static/css/2.afc36f9d.chunk.css.map",
+    "static/css/main.ff00412c.chunk.css.map": "/alphabet_for_kids/static/css/main.ff00412c.chunk.css.map"
+  }
+}
