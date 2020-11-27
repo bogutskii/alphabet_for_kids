@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./alphabet-style.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 const Alphabet = (props) => {
   let randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
   //const [alphabet, setAlphabet] = useState("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
- 
-  const abc = [
+
+  const alp = [
     "A",
     "B",
     "C",
@@ -33,8 +33,19 @@ const Alphabet = (props) => {
     "Y",
     "Z"
   ];
-
+  const [abc, setAbc] = useState(alp.map((el) => el + el.toLowerCase()));
   const [count, setCount] = useState(0);
+  const [hide, setHide] = useState(false);
+  const [counter, setCounter] = useState(0);
+  const [formCheck, setFormCheck] = useState(false);
+  const [results, setResults] = useState({
+    correct: 0,
+    incorrect: 0,
+    pasS: 0,
+    incList: [],
+    corList: [],
+    pasList: []
+  });
   const next = () => {
     if (count === 25) {
       setCount(0);
@@ -50,53 +61,245 @@ const Alphabet = (props) => {
     }
   };
   const randomLetter = () => {
-let rand = Math.floor(Math.random()*26)
-setCount(rand)
-  }
+    let rand = Math.floor(Math.random() * 26);
+    setCount(rand);
+  };
+  const startTest = () => {
+    setCount(0);
+    setHide(!hide);
+    setAbc([...abc].sort(() => 0.5 - Math.random()));
+  };
+
+  const Correct = () => {
+    skipWrongCorrect();
+    setResults({
+      ...results,
+      correct: results.correct + 1
+    });
+  };
+  const wrong = () => {
+    skipWrongCorrect();
+    setResults({...results,
+      incorrect: results.incorrect + 1,
+      incList: [...results.incList, abc[count]]
+    });
+  };
+  const skip = () => {
+    skipWrongCorrect();
+    setResults({...results,
+      pasS: results.pasS + 1,
+      pasList: [...results.pasList, abc[count]]
+    });
+  };
+
+  const goBack = () => {
+    setCount(0);
+    setCounter(0);
+    setFormCheck(!formCheck);
+    setHide(!hide);
+    setResults({
+      correct: 0,
+      incorrect: 0,
+      pasS: 0,
+      corList: [],
+      incList: [],
+      pasList: []
+    });
+    setAbc(abc.sort());
+  };
+
+  const stopTest = () => {
+    setCount(0);
+    setFormCheck(!formCheck);
+    setAbc(abc.sort());
+  };
+  const skipWrongCorrect = () => {
+    if (count === 25) {
+      setCount(0);
+      setFormCheck(!formCheck);
+    }
+    setCount(count + 1);
+    setCounter(counter + 1);
+  };
+
+  const upperAndLowerCases = () => {
+    setAbc(alp.map((el) => el + el.toLowerCase()));
+  };
+
+  const upperCase = () => {
+    setAbc(abc.map((el) => el[0].toUpperCase()));
+  };
+
+  const lowerCase = () => {
+    setAbc(abc.map((el) => el[0].toLowerCase()));
+  };
 
   return (
-    <div>
-   
-<p className="all-alph">
-        {abc.map((letter, i) =>
-          i === count ? (
-            <span className="selected" key={i}>{letter}</span>
-          ) : (
-            <span className="letterCircle"key={i}>{letter}</span>
-          )
+      <div className="container">
+        {!formCheck ? (
+            <div>
+              {/*The whole thing*/}
+              {hide ? (
+                  ""
+              ) : (
+                  <div>
+                    <p className="all-alph">
+                      {abc.map((letter, i) =>
+                              i === count ? (
+                                  <span className="selected" key={i}>
+                      {letter}
+                    </span>
+                              ) : (
+                                  <span className="letterCircle" key={i}>
+                      {letter}
+                    </span>
+                              )
+                      )}
+                    </p>
+                  </div>
+              )}
+
+              <div className="wrap">
+                <a className="wrap-child-active-25" onClick={previous}>
+                  &#8826;
+                </a>
+
+                <div
+                    style={{ color: randomColor }}
+                    className="wrap-child-active-50"
+                >
+                  {abc[count]}
+                </div>
+
+                <a className="wrap-child-active-25" onClick={next}>
+                  &#8827;
+                </a>
+              </div>
+
+
+              {hide ? (
+                  <button className="btn btn-secondary" onClick={stopTest}>
+                    Stop Test
+                  </button>
+              ) : (
+                  <button onClick={startTest} className="btn btn-secondary">
+                    Start Test
+                  </button>
+              )}
+              <p />
+
+              <br />
+              {hide ? (
+                  <div>
+                    <h3>Correct/Wrong</h3>
+                    <button className="btn btn-secondary" onClick={Correct}>
+                      Correct
+                    </button>
+
+                    <button className="btn btn-secondary" onClick={wrong}>
+                      Wrong
+                    </button>
+
+                    <button className="btn btn-secondary" onClick={skip}>
+                      Skip
+                    </button>
+                    <p />
+                    {<h4>{counter + "/" + 26}</h4>}
+                  </div>
+              ) : (
+                  ""
+              )}
+              <p />
+              {hide ? (
+                  ""
+              ) : (
+                  <div className="btn-group" role="group">
+                    <button
+                        type="button"
+                        className="btn btn-secondary"
+                        onClick={previous}
+                    >
+                      Previous
+                    </button>
+                    <button
+                        type="button"
+                        className="btn btn-secondary"
+                        onClick={next}
+                    >
+                      Next
+                    </button>
+                    <button
+                        type="button"
+                        className="btn btn-secondary"
+                        onClick={randomLetter}
+                    >
+                      Random
+                    </button>
+                  </div>
+              )}
+              {hide ? (
+                  ""
+              ) : (
+                  <div className="lower-upper-both">
+                    <button
+                        className="btn btn-secondary"
+                        onClick={() => upperAndLowerCases()}
+                    >
+                      Both
+                    </button>
+                    <button className="btn btn-secondary" onClick={() => upperCase()}>
+                      Upper
+                    </button>
+                    <button className="btn btn-secondary" onClick={() => lowerCase()}>
+                      Lower
+                    </button>
+                  </div>
+              )}
+            </div>
+        ) : (
+            <div>
+              <h1>Your score!</h1>
+              <div>
+                <h3>Correct:{results.correct} </h3>
+              </div>
+
+              <div>
+                <h3>
+                  Wrong: {results.incorrect}&nbsp;&nbsp;&nbsp;
+                  {results.incList.length > 0 ? (
+                      <select>
+                        {results.incList.map((el) => (
+                            <option>{el}</option>
+                        ))}
+                      </select>
+                  ) : ""}
+                </h3>
+              </div>
+
+              <div>
+                <h3>
+                  Skipped:{results.pasS} &nbsp;&nbsp;&nbsp;
+                  {results.pasList.length > 0 ? (
+                      <select>
+                        {results.pasList.map((el) => (
+                            <option>{el}</option>
+                        ))}
+                      </select>
+                  ) : ""}
+                </h3>
+              </div>
+              <br />
+
+              {hide ? (
+                  <button onClick={goBack} className="btn btn-secondary">
+                    Go back
+                  </button>
+              ) : (
+                  ""
+              )}
+            </div>
         )}
-
-</p>
-  
-      <hr />
-
-<div className="wrap">
-
-          <a className="wrap-child-active-25"  onClick={previous}>
-          &#8826;
-          </a>
-
-          <div style={{ color: randomColor }} className="wrap-child-active-50">
-            {abc[count] + abc[count].toLowerCase()}
-          </div>
-
-          <a className="wrap-child-active-25" onClick={next}>
-          &#8827;
-          </a>
-
-</div>
-      <hr />
-
-
-
-      <div className="btn-group" role="group" aria-label="Basic example">
-  <button type="button" className="btn btn-secondary"  onClick={previous}>Previous</button>
-  <button type="button" className="btn btn-secondary"onClick={next}>Next</button>
-  <button type="button" className="btn btn-secondary"  onClick={randomLetter}>Random</button>
-</div>
-
-
-</div>
+      </div>
   );
 };
 export default Alphabet;

@@ -6,38 +6,42 @@
   flex-flow: row nowrap;
   height: 100%;
 }
+
 .wrap-child-active-50 {
   flex-basis: 50%;
-  font-size:30vw;
+  font-size: 30vw;
+  mix-blend-mode: difference;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff,
+  1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 .wrap-child-active-25 {
   flex-basis: 25%;
-  font-size:30vw;
+  font-size: 30vw;
   opacity: 0.1;
   text-decoration: none !important;
 }
-.wrap a{
+.wrap a {
   text-decoration: none;
   cursor: pointer;
 }
 
-.all-alph{
-width: 100%;
-  font-size:8vw;
+.all-alph {
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
   text-align: center;
   line-height: 25%;
 }
 
-
 .letterCircle {
   border-radius: 25%;
-  height: 8vw;
+  height: 4vw;
   padding: 5px;
   background: #fff;
   border: 2px solid #666;
   color: #666;
   text-align: center;
-  font:   2vw Arial, sans-serif;
+  font: 2vw Arial, sans-serif;
 }
 
 .selected {
@@ -48,6 +52,9 @@ width: 100%;
   border: 2px solid rgb(238, 65, 13);
   color: rgb(245, 19, 19);
   text-align: center;
-  font:   2vw Arial, sans-serif;
+  font: 2vw Arial, sans-serif;
 }
 
+.lower-upper-both {
+  margin: 15px;
+}

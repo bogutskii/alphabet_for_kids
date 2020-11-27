@@ -4,25 +4,25 @@
 }
 body {
   background: linear-gradient(
-    289deg,
-    #2056db,
-    #db6420,
-    #52f223,
-    #f2ae23,
-    #c311d5,
-    #a15adb,
-    #2fb9e3,
-    #63ee69,
-    #3f28c0,
-    #ea0554,
-    #05ead8,
-    #b0bd00
+          289deg,
+          #2056db,
+          #db6420,
+          #27790f,
+          #97690c,
+          #c311d5,
+          #a15adb,
+          #0f4c5f,
+          #1c521c,
+          #3f28c0,
+          #ea0554,
+          #155550,
+          #6f742c
   );
   background-size: 2400% 2400%;
 
-  -webkit-animation: fireBack 159s ease infinite;
-  -moz-animation: fireBack 159s ease infinite;
-  animation: fireBack 159s ease infinite;
+  -webkit-animation: fireBack 25s ease infinite;
+  -moz-animation: fireBack 25s ease infinite;
+  animation: fireBack 250s ease infinite;
 }
 
 @-webkit-keyframes fireBack {
