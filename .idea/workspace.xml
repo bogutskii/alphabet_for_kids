@@ -2,14 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aef01aa9-c622-4849-9793-9bfb8ce043e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Comonents/Stats.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Comonents/UpperLineAlph.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/alphabet-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/alphabet-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Alphabet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alphabet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -95,6 +104,11 @@
       <workItem from="1600999396405" duration="982000" />
       <workItem from="1601341400633" duration="1140000" />
       <workItem from="1606515589213" duration="207000" />
+      <workItem from="1606516154418" duration="5321000" />
+      <workItem from="1608493842978" duration="999000" />
+      <workItem from="1609137717170" duration="509000" />
+      <workItem from="1609207474852" duration="1000" />
+      <workItem from="1609224013444" duration="229000" />
     </task>
     <task id="LOCAL-00001" summary="done, Helping children learn the English alphabet.">
       <created>1597644735428</created>
@@ -194,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597685087637</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="-upper lower case both &#10;-add quiz&#10;-css">
+      <created>1606516423411</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1606516423411</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,52 +226,21 @@
     <MESSAGE value="done, Helping children learn the English alphabet." />
     <MESSAGE value="deploy" />
     <MESSAGE value="restart" />
-    <option name="LAST_COMMIT_MESSAGE" value="restart" />
+    <MESSAGE value="-upper lower case both &#10;-add quiz&#10;-css" />
+    <option name="LAST_COMMIT_MESSAGE" value="-upper lower case both &#10;-add quiz&#10;-css" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="878" y="473" key="#Notifications" timestamp="1597855128687">
-      <screen x="0" y="23" width="1920" height="1120" />
+    <state x="297" y="23" width="846" height="832" key="CommitChangelistDialog2" timestamp="1606516423158">
+      <screen x="0" y="23" width="1440" height="832" />
     </state>
-    <state x="878" y="473" key="#Notifications/0.23.1920.1120@0.23.1920.1120" timestamp="1597855128686" />
-    <state x="76" y="484" key="#deploy" timestamp="1597680962833">
-      <screen x="0" y="23" width="1920" height="1120" />
+    <state x="297" y="23" width="846" height="832" key="CommitChangelistDialog2/0.23.1440.832@0.23.1440.832" timestamp="1606516423158" />
+    <state x="320" y="185" key="Vcs.Push.Dialog.v2" timestamp="1606516426091">
+      <screen x="0" y="23" width="1440" height="832" />
     </state>
-    <state x="76" y="484" key="#deploy/0.23.1920.1120@0.23.1920.1120" timestamp="1597680962833" />
-    <state x="456" y="169" key="CommitChangelistDialog2" timestamp="1597685087466">
-      <screen x="0" y="23" width="1920" height="1120" />
+    <state x="320" y="185" key="Vcs.Push.Dialog.v2/0.23.1440.832@0.23.1440.832" timestamp="1606516426091" />
+    <state x="385" y="175" width="670" height="676" key="search.everywhere.popup" timestamp="1608494985785">
+      <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="456" y="169" key="CommitChangelistDialog2/0.23.1920.1120@0.23.1920.1120" timestamp="1597685087466" />
-    <state width="1728" height="249" key="GridCell.Tab.0.bottom" timestamp="1599117772115">
-      <screen x="0" y="23" width="1920" height="1120" />
-    </state>
-    <state width="1728" height="249" key="GridCell.Tab.0.bottom/0.23.1920.1120@0.23.1920.1120" timestamp="1599117772115" />
-    <state width="1728" height="249" key="GridCell.Tab.0.center" timestamp="1599117772114">
-      <screen x="0" y="23" width="1920" height="1120" />
-    </state>
-    <state width="1728" height="249" key="GridCell.Tab.0.center/0.23.1920.1120@0.23.1920.1120" timestamp="1599117772114" />
-    <state width="1728" height="249" key="GridCell.Tab.0.left" timestamp="1599117772114">
-      <screen x="0" y="23" width="1920" height="1120" />
-    </state>
-    <state width="1728" height="249" key="GridCell.Tab.0.left/0.23.1920.1120@0.23.1920.1120" timestamp="1599117772114" />
-    <state width="1728" height="249" key="GridCell.Tab.0.right" timestamp="1599117772115">
-      <screen x="0" y="23" width="1920" height="1120" />
-    </state>
-    <state width="1728" height="249" key="GridCell.Tab.0.right/0.23.1920.1120@0.23.1920.1120" timestamp="1599117772115" />
-    <state x="819" y="339" key="RollbackChangesDialog" timestamp="1597646435367">
-      <screen x="0" y="23" width="1920" height="1120" />
-    </state>
-    <state x="819" y="339" key="RollbackChangesDialog/0.23.1920.1120@0.23.1920.1120" timestamp="1597646435366" />
-    <state x="552" y="251" key="SettingsEditor" timestamp="1597680407690">
-      <screen x="0" y="23" width="1920" height="1120" />
-    </state>
-    <state x="552" y="251" key="SettingsEditor/0.23.1920.1120@0.23.1920.1120" timestamp="1597680407690" />
-    <state x="625" y="563" key="Vcs.Push.Dialog.v2" timestamp="1597685102943">
-      <screen x="0" y="23" width="1920" height="1120" />
-    </state>
-    <state x="625" y="563" key="Vcs.Push.Dialog.v2/0.23.1920.1120@0.23.1920.1120" timestamp="1597685102943" />
-    <state x="725" y="492" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1597684163503">
-      <screen x="0" y="23" width="1920" height="1120" />
-    </state>
-    <state x="725" y="492" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.23.1920.1120@0.23.1920.1120" timestamp="1597684163503" />
+    <state x="385" y="175" width="670" height="676" key="search.everywhere.popup/0.23.1440.828@0.23.1440.828" timestamp="1608494985785" />
   </component>
 </project>

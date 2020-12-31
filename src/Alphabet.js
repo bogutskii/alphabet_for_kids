@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "./alphabet-style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import UpperLineAlph from "../src/Comonents/UpperLineAlph"
+import Stats from "./Comonents/Stats";
+
 const Alphabet = (props) => {
   let randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
   //const [alphabet, setAlphabet] = useState("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
@@ -136,27 +139,14 @@ const Alphabet = (props) => {
 
   return (
       <div className="container">
+
         {!formCheck ? (
             <div>
-              {/*The whole thing*/}
+
               {hide ? (
                   ""
               ) : (
-                  <div>
-                    <p className="all-alph">
-                      {abc.map((letter, i) =>
-                              i === count ? (
-                                  <span className="selected" key={i}>
-                      {letter}
-                    </span>
-                              ) : (
-                                  <span className="letterCircle" key={i}>
-                      {letter}
-                    </span>
-                              )
-                      )}
-                    </p>
-                  </div>
+                  <UpperLineAlph abc={abc} count={count}/>
               )}
 
               <div className="wrap">
@@ -191,7 +181,6 @@ const Alphabet = (props) => {
               <br />
               {hide ? (
                   <div>
-                    <h3>Correct/Wrong</h3>
                     <button className="btn btn-secondary" onClick={Correct}>
                       Correct
                     </button>
@@ -257,37 +246,10 @@ const Alphabet = (props) => {
               )}
             </div>
         ) : (
+
             <div>
-              <h1>Your score!</h1>
-              <div>
-                <h3>Correct:{results.correct} </h3>
-              </div>
+              <Stats results={results} goBack={goBack} hide={hide}/>
 
-              <div>
-                <h3>
-                  Wrong: {results.incorrect}&nbsp;&nbsp;&nbsp;
-                  {results.incList.length > 0 ? (
-                      <select>
-                        {results.incList.map((el) => (
-                            <option>{el}</option>
-                        ))}
-                      </select>
-                  ) : ""}
-                </h3>
-              </div>
-
-              <div>
-                <h3>
-                  Skipped:{results.pasS} &nbsp;&nbsp;&nbsp;
-                  {results.pasList.length > 0 ? (
-                      <select>
-                        {results.pasList.map((el) => (
-                            <option>{el}</option>
-                        ))}
-                      </select>
-                  ) : ""}
-                </h3>
-              </div>
               <br />
 
               {hide ? (
