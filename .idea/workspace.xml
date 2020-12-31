@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aef01aa9-c622-4849-9793-9bfb8ce043e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Comonents/Stats.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Comonents/UpperLineAlph.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Comonents/Accordion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Comonents/accordion.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Comonents/upperLineAlph.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Alphabet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alphabet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comonents/Stats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/Stats.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comonents/UpperLineAlph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/UpperLineAlph.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/alphabet-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/alphabet-style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +112,7 @@
       <workItem from="1608493842978" duration="999000" />
       <workItem from="1609137717170" duration="509000" />
       <workItem from="1609207474852" duration="1000" />
-      <workItem from="1609224013444" duration="229000" />
+      <workItem from="1609224013444" duration="3595000" />
     </task>
     <task id="LOCAL-00001" summary="done, Helping children learn the English alphabet.">
       <created>1597644735428</created>
@@ -215,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606516423411</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="-upper lower case both &#10;-add quiz&#10;-css">
+      <created>1609394009284</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1609394009284</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,14 +241,19 @@
     <option name="LAST_COMMIT_MESSAGE" value="-upper lower case both &#10;-add quiz&#10;-css" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="297" y="23" width="846" height="832" key="CommitChangelistDialog2" timestamp="1606516423158">
-      <screen x="0" y="23" width="1440" height="832" />
+    <state x="297" y="23" width="846" height="832" key="CommitChangelistDialog2" timestamp="1609394009010">
+      <screen x="0" y="23" width="1440" height="828" />
     </state>
+    <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1609394009010" />
     <state x="297" y="23" width="846" height="832" key="CommitChangelistDialog2/0.23.1440.832@0.23.1440.832" timestamp="1606516423158" />
     <state x="320" y="185" key="Vcs.Push.Dialog.v2" timestamp="1606516426091">
       <screen x="0" y="23" width="1440" height="832" />
     </state>
     <state x="320" y="185" key="Vcs.Push.Dialog.v2/0.23.1440.832@0.23.1440.832" timestamp="1606516426091" />
+    <state x="543" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609393998768">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="543" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.828@0.23.1440.828" timestamp="1609393998768" />
     <state x="385" y="175" width="670" height="676" key="search.everywhere.popup" timestamp="1608494985785">
       <screen x="0" y="23" width="1440" height="828" />
     </state>

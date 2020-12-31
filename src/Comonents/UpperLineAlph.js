@@ -1,11 +1,11 @@
 import React from "react";
-import "../styles.css";
+import "./upperLineAlph.css";
 
 
 
 export default function UpperLineAlph (props){
-return <div>
-        <p className="all-alph">
+return <div className='center-div'>
+        <div className="all-alph">
             {props.abc.map((letter, i) =>
                 i === props.count ? (
                     <span className="selected" key={i}>
@@ -17,7 +17,7 @@ return <div>
                     </span>
                 )
             )}
-        </p>
+        </div>
     </div>
 
 }

@@ -73,11 +73,12 @@ const Alphabet = (props) => {
     setAbc([...abc].sort(() => 0.5 - Math.random()));
   };
 
-  const Correct = () => {
+  const correct = () => {
     skipWrongCorrect();
     setResults({
       ...results,
-      correct: results.correct + 1
+      correct: results.correct + 1,
+      corList: [...results.corList, abc[count]]
     });
   };
   const wrong = () => {
@@ -138,7 +139,7 @@ const Alphabet = (props) => {
   };
 
   return (
-      <div className="container">
+      <>
 
         {!formCheck ? (
             <div>
@@ -181,7 +182,7 @@ const Alphabet = (props) => {
               <br />
               {hide ? (
                   <div>
-                    <button className="btn btn-secondary" onClick={Correct}>
+                    <button className="btn btn-secondary" onClick={correct}>
                       Correct
                     </button>
 
@@ -261,7 +262,7 @@ const Alphabet = (props) => {
               )}
             </div>
         )}
-      </div>
+      </>
   );
 };
 export default Alphabet;

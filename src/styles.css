@@ -58,6 +58,8 @@ body {
     background-position: 0% 52%;
   }
 }
-.container{
-    padding-top: 10px
+
+
+.center-div{
+    margin: 0 auto;
 }
