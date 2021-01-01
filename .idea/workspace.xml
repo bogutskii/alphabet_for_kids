@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aef01aa9-c622-4849-9793-9bfb8ce043e4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Alphabet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alphabet.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +40,9 @@
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/.idea" />
@@ -105,7 +108,7 @@
       <workItem from="1608493842978" duration="999000" />
       <workItem from="1609137717170" duration="509000" />
       <workItem from="1609207474852" duration="1000" />
-      <workItem from="1609224013444" duration="8893000" />
+      <workItem from="1609224013444" duration="10005000" />
     </task>
     <task id="LOCAL-00001" summary="done, Helping children learn the English alphabet.">
       <created>1597644735428</created>
@@ -247,22 +250,22 @@
     </state>
     <state x="297" y="23" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1609399071158" />
     <state x="297" y="23" width="846" height="832" key="CommitChangelistDialog2/0.23.1440.832@0.23.1440.832" timestamp="1606516423158" />
-    <state width="1419" height="126" key="GridCell.Tab.0.bottom" timestamp="1609529053884">
+    <state width="1419" height="126" key="GridCell.Tab.0.bottom" timestamp="1609529368231">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1419" height="126" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1609529053884" />
-    <state width="1419" height="126" key="GridCell.Tab.0.center" timestamp="1609529053883">
+    <state width="1419" height="126" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1609529368231" />
+    <state width="1419" height="126" key="GridCell.Tab.0.center" timestamp="1609529368230">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1419" height="126" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1609529053883" />
-    <state width="1419" height="126" key="GridCell.Tab.0.left" timestamp="1609529053883">
+    <state width="1419" height="126" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1609529368230" />
+    <state width="1419" height="126" key="GridCell.Tab.0.left" timestamp="1609529368230">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1419" height="126" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1609529053883" />
-    <state width="1419" height="126" key="GridCell.Tab.0.right" timestamp="1609529053883">
+    <state width="1419" height="126" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1609529368230" />
+    <state width="1419" height="126" key="GridCell.Tab.0.right" timestamp="1609529368230">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1419" height="126" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1609529053883" />
+    <state width="1419" height="126" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1609529368230" />
     <state x="3" y="129" key="SettingsEditor" timestamp="1609402744470">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
