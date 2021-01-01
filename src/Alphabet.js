@@ -6,7 +6,6 @@ import Stats from "./Comonents/Stats";
 
 const Alphabet = (props) => {
   let randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-  //const [alphabet, setAlphabet] = useState("ABCDEFGHIJKLMNOPQRSTUVWXYZ");
 
   const alp = [
     "A",
@@ -165,6 +164,7 @@ const Alphabet = (props) => {
                 <a className="wrap-child-active-25" onClick={next}>
                   &#8827;
                 </a>
+
               </div>
 
 
