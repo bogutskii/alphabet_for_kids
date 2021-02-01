@@ -3,7 +3,7 @@ import "./alphabet-style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import UpperLineAlph from "../src/Comonents/UpperLineAlph"
 import Stats from "./Comonents/Stats";
-
+import Word from "./Comonents/Word";
 const Alphabet = (props) => {
   let randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 
@@ -159,7 +159,9 @@ const Alphabet = (props) => {
                     className="wrap-child-active-50"
                 >
                   {abc[count]}
+                  <div className="wrap-child-active-15" >  <Word index={count} show={hide}/></div>
                 </div>
+
 
                 <a className="wrap-child-active-25" onClick={next}>
                   &#8827;
