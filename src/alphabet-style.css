@@ -28,7 +28,7 @@
 .wrap-child-active-15 {
   flex-basis: 50%;
   font-size: 2vw;
-  margin: -80px;
+  margin-top: -60px;
   mix-blend-mode: difference;
   text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff,
   1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;

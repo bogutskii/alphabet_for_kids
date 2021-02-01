@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aef01aa9-c622-4849-9793-9bfb8ce043e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Comonents/Word.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Alphabet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alphabet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comonents/accordion.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/accordion.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/alphabet-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/alphabet-style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +110,7 @@
       <workItem from="1609137717170" duration="509000" />
       <workItem from="1609207474852" duration="1000" />
       <workItem from="1609224013444" duration="10870000" />
-      <workItem from="1612157715820" duration="2320000" />
+      <workItem from="1612157715820" duration="2944000" />
     </task>
     <task id="LOCAL-00001" summary="done, Helping children learn the English alphabet.">
       <created>1597644735428</created>
@@ -239,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609530233506</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="-add words">
+      <created>1612160753882</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1612160753882</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,14 +259,16 @@
     <MESSAGE value="-upper lower case both &#10;-add quiz&#10;-css" />
     <MESSAGE value="-ref up line alp" />
     <MESSAGE value="-add README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="-add README.md" />
+    <MESSAGE value="-add words" />
+    <option name="LAST_COMMIT_MESSAGE" value="-add words" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="297" y="23" width="846" height="828" key="CommitChangelistDialog2" timestamp="1609530233374">
-      <screen x="0" y="23" width="1440" height="828" />
+    <state x="347" y="25" width="846" height="828" key="CommitChangelistDialog2" timestamp="1612160753704">
+      <screen x="0" y="25" width="1680" height="963" />
     </state>
     <state x="297" y="23" width="846" height="828" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1609530233374" />
     <state x="297" y="23" width="846" height="832" key="CommitChangelistDialog2/0.23.1440.832@0.23.1440.832" timestamp="1606516423158" />
+    <state x="347" y="25" key="CommitChangelistDialog2/0.25.1680.963@0.25.1680.963" timestamp="1612160753704" />
     <state width="1419" height="126" key="GridCell.Tab.0.bottom" timestamp="1609531474389">
       <screen x="0" y="23" width="1440" height="828" />
     </state>

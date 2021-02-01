@@ -29,13 +29,12 @@ body {
 .accordion-item.collapsed {
     max-height: 0;
     transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+    text-align: center;
 }
 
 .accordion-title {
     font-weight: 600;
     cursor: pointer;
-    color: white;
-
     padding: 0.5em 1.5em;
     border: solid 0.5px #ccc;
     border-radius: 1.5em;
@@ -54,7 +53,7 @@ body {
 
 &:hover,
 &.open {
-     color: black;
+     color: #ffffff;
  }
 
 &.open {
