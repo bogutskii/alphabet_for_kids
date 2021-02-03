@@ -1,37 +1,35 @@
 import React from 'react';
 
 const Word = (props) => {
-    const words = [
-        "Apple",
-        "Ball",
-        "Cat",
-        "Dog",
-        "Eat",
-        "Fox",
-        "Grass",
-        "Hat",
-        "Ice",
-        "Jam",
-        "Kid",
-        "Life",
-        "Mouse",
-        "Nose",
-        "Oak",
-        "Pet",
-        "Queen",
-        "Red",
-        "Sport",
-        "Tab",
-        "Up",
-        "Van",
-        "Water",
-        "Xenia",
-        "Yes",
-        "Zoo"
-    ];
-return props.show ? <></>: <div>
-    {words[props.index]}
-</div>
+    const words = ["[ei] Apple",
+        "[bi:] Ball",
+        "[ci:] Cat",
+        "[di:] Dog",
+        "[i:] Eat",
+        "[ef] Fox",
+        "[ʤi:] Grass",
+        "[eiʧ] Hat",
+        "[ai] Ice",
+        "[ʤei] Jam",
+        "[kei] Kid",
+        "[el] Life",
+        "[em] Mouse",
+        "[en] Nose",
+        "[ou] Oak",
+        "[pi:] Pet",
+        "[kju:] Queen",
+        "[a:] Red",
+        "[es] Sport",
+        "[ti:] Tab",
+        "[ju:] Up",
+        "[vi:] Van",
+        "[‘dablju:] Water",
+        "[eks]Yy",
+        "[wai] Xenia",
+        "[zed] Yes"]
+    return props.show ? <></> : <div>
+        {words[props.index]}
+    </div>
 
 }
 export default Word;
