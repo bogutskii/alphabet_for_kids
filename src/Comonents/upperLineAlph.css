@@ -10,7 +10,7 @@
 
 .letterCircle {
     border-radius: 25%;
-    height: 4vw;
+  margin: 0 2px;
     padding: 5px;
     background: #fff;
     border: 2px solid #666;
