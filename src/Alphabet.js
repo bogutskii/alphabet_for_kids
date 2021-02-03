@@ -146,7 +146,7 @@ const Alphabet = (props) => {
               {hide ? (
                   ""
               ) : (
-                  <UpperLineAlph abc={abc} count={count}/>
+                  <UpperLineAlph abc={abc} count={count} setCount={(count=>setCount(count))}/>
               )}
 
               <div className="wrap">

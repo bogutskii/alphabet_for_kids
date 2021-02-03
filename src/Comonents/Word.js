@@ -24,9 +24,9 @@ const Word = (props) => {
         "[ju:] Up",
         "[vi:] Van",
         "[‘dablju:] Water",
-        "[eks]Yy",
-        "[wai] Xenia",
-        "[zed] Yes"]
+        "[eks] Xenia",
+        "[wai] Yes",
+        "[zed] Zebra"]
     return props.show ? <></> : <div>
         {words[props.index]}
     </div>
