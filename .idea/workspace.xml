@@ -20,9 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aef01aa9-c622-4849-9793-9bfb8ce043e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Comonents/NavBar/Navigation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Comonents/VideoPlaylist.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comonents/NavBar/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/NavBar/Navigation.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +133,7 @@
       <workItem from="1609224013444" duration="10870000" />
       <workItem from="1612157715820" duration="5805000" />
       <workItem from="1612313041814" duration="5097000" />
-      <workItem from="1612417722246" duration="286000" />
+      <workItem from="1612417722246" duration="1370000" />
     </task>
     <task id="LOCAL-00001" summary="done, Helping children learn the English alphabet.">
       <created>1597644735428</created>
@@ -294,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612317415568</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="-add tamplate for VideoPlaylist&#10; ready for routing">
+      <created>1612418160650</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1612418160650</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,13 +334,14 @@
     <MESSAGE value="-add TRANSCRIPTION" />
     <MESSAGE value="-add margin upper line&#10;-del dropdown" />
     <MESSAGE value="-add  vowels&#10;- upper line choice letter" />
-    <option name="LAST_COMMIT_MESSAGE" value="-add  vowels&#10;- upper line choice letter" />
+    <MESSAGE value="-add tamplate for VideoPlaylist&#10; ready for routing" />
+    <option name="LAST_COMMIT_MESSAGE" value="-add tamplate for VideoPlaylist&#10; ready for routing" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="347" y="25" width="846" height="828" key="CommitChangelistDialog2" timestamp="1612317415418">
+    <state x="347" y="25" width="846" height="828" key="CommitChangelistDialog2" timestamp="1612418160499">
       <screen x="0" y="25" width="1680" height="963" />
     </state>
-    <state x="347" y="25" key="CommitChangelistDialog2/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1612317415418" />
+    <state x="347" y="25" key="CommitChangelistDialog2/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1612418160499" />
     <state x="297" y="23" width="846" height="828" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1609530233374" />
     <state x="297" y="23" width="846" height="832" key="CommitChangelistDialog2/0.23.1440.832@0.23.1440.832" timestamp="1606516423158" />
     <state x="347" y="25" key="CommitChangelistDialog2/0.25.1680.963@0.25.1680.963" timestamp="1612161305516" />
@@ -359,10 +369,10 @@
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="3" y="129" key="SettingsEditor/0.23.1440.828@0.23.1440.828" timestamp="1609402744470" />
-    <state x="373" y="212" key="Vcs.Push.Dialog.v2" timestamp="1612317416990">
+    <state x="373" y="212" key="Vcs.Push.Dialog.v2" timestamp="1612418162283">
       <screen x="0" y="25" width="1680" height="963" />
     </state>
-    <state x="373" y="212" key="Vcs.Push.Dialog.v2/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1612317416990" />
+    <state x="373" y="212" key="Vcs.Push.Dialog.v2/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1612418162283" />
     <state x="320" y="184" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1609530234892" />
     <state x="320" y="185" key="Vcs.Push.Dialog.v2/0.23.1440.832@0.23.1440.832" timestamp="1606516426091" />
     <state x="543" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609393998768">
