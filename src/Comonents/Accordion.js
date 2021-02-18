@@ -1,6 +1,8 @@
 import React from "react";
 import "./accordion.css";
 
+import {connect} from 'react-redux'
+
 const Accordion = ({ title, children }) => {
     const [isOpen, setOpen] = React.useState(false);
     return (
@@ -17,4 +19,22 @@ const Accordion = ({ title, children }) => {
         </div>
     );
 };
-export default Accordion;
+
+
+const mapStateToProps = (state) => ({
+    stats: state.stats,
+})
+
+const mapDispatchToProps = (dispatch) => ({
+
+    changeCreateModal: (value) => dispatch({
+        type: 'CHANGE_CREATE_MODAL',
+        payload: {
+            value: value
+        }
+    }),
+
+})
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Accordion);

@@ -15,7 +15,7 @@ function App(props) {
             <div className="App">
                 <Navigation/>
                 {/*<Route exact path="/" render={Alphabet}/>*/}
-                <Alphabet/>
+                <Alphabet />
 
                 <Route path='/Video' render={VideoPlaylist}/>
                 <Route path='/Stats' render={Stats}/>

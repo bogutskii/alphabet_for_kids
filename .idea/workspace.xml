@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aef01aa9-c622-4849-9793-9bfb8ce043e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Alphabet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alphabet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comonents/Accordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/Accordion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comonents/Stats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/Stats.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Comonents/redux/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/redux/reducers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +138,7 @@
       <workItem from="1612157715820" duration="5805000" />
       <workItem from="1612313041814" duration="5097000" />
       <workItem from="1612417722246" duration="4663000" />
-      <workItem from="1613363701365" duration="6051000" />
+      <workItem from="1613363701365" duration="6920000" />
     </task>
     <task id="LOCAL-00001" summary="done, Helping children learn the English alphabet.">
       <created>1597644735428</created>
@@ -333,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613544245939</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="-old store convert">
+      <created>1613633333936</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1613633333936</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,16 +381,17 @@
     <MESSAGE value="install redux" />
     <MESSAGE value="redux s" />
     <MESSAGE value="redux store ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="redux store ready" />
+    <MESSAGE value="-old store convert" />
+    <option name="LAST_COMMIT_MESSAGE" value="-old store convert" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="347" y="25" width="846" height="828" key="CommitChangelistDialog2" timestamp="1613544245712">
+    <state x="347" y="25" width="846" height="828" key="CommitChangelistDialog2" timestamp="1613633333780">
       <screen x="0" y="25" width="1680" height="963" />
     </state>
     <state x="347" y="25" key="CommitChangelistDialog2/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1612418160499" />
     <state x="297" y="23" width="846" height="828" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1609530233374" />
     <state x="297" y="23" width="846" height="832" key="CommitChangelistDialog2/0.23.1440.832@0.23.1440.832" timestamp="1606516423158" />
-    <state x="347" y="25" key="CommitChangelistDialog2/0.25.1680.963@0.25.1680.963" timestamp="1613544245712" />
+    <state x="347" y="25" key="CommitChangelistDialog2/0.25.1680.963@0.25.1680.963" timestamp="1613633333780" />
     <state width="1419" height="85" key="GridCell.Tab.0.bottom" timestamp="1613540142626">
       <screen x="0" y="25" width="1680" height="963" />
     </state>

@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles.css";
 import Accordion from "./Accordion"
+import {connect} from "react-redux";
 
 
 export default function Stats (props){
@@ -18,3 +19,22 @@ export default function Stats (props){
         );
     };
 
+
+const mapStateToProps = (state) => ({
+    letters: state.letters,
+    test: state.test,
+})
+
+const mapDispatchToProps = (dispatch) => ({
+
+    changeCreateModal: (value) => dispatch({
+        type: 'CHANGE_CREATE_MODAL',
+        payload: {
+            value: value
+        }
+    }),
+
+})
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

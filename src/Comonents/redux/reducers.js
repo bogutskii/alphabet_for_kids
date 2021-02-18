@@ -30,13 +30,22 @@ const initialState = {
     stats: {
         correct: 0,
         incorrect: 0,
-        skip: 0
+        skip: 0,
+        corList: [],
+        incList: [],
+        pasList: []
     },
     test: {
         testStart: false
     },
     modals: {
         modal: false
+    },
+    current: {
+        currentIndex: 0
+    },
+    upperLine:{
+        showUpperLine: true
     }
 
 }
