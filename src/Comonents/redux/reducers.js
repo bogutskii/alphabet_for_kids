@@ -44,7 +44,7 @@ const initialState = {
     current: {
         currentIndex: 0
     },
-    upperLine:{
+    upperLine: {
         showUpperLine: true
     }
 
@@ -53,10 +53,32 @@ const initialState = {
 const alphabet = (state = initialState, action) => {
     switch (action.type) {
 
-        case 'CHANGE_CREATE_MODAL':
+        case 'CHANGE_LETTER_ON_CLICKED':
             return {
-                ...state, modals: {...state.modals, modalsIsOpen: action.payload.value}
+                ...state, current: {...state.current, currentIndex: action.payload.index}
             }
+        case 'PREVIOUS_LETTER':
+            let newIndex = state.current.currentIndex
+            if (newIndex === 0) {
+                newIndex = 25;
+            } else {
+                --newIndex
+            }
+            return {
+                ...state, current: {...state.current, currentIndex: newIndex}
+            }
+        case 'NEXT_LETTER':
+            let newNextIndex = state.current.currentIndex
+            if (newNextIndex === 25) {
+                newIndex = 0;
+            } else {
+                ++newNextIndex
+            }
+            return {
+                ...state, current: {...state.current, currentIndex: newNextIndex}
+            }
+
+
         default:
             return state
     }

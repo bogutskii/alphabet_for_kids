@@ -8,7 +8,7 @@ import {connect} from "react-redux";
 
 
 const Alphabet = (props) => {
-const {letters, current} = props
+// const {letters, current} = props
 
     let randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 
@@ -23,9 +23,9 @@ const {letters, current} = props
 
             <div className="wrap">
 
-                {/*<a className="wrap-child-active-25" onClick={previous}>*/}
-                {/*    &#8826;*/}
-                {/*</a>*/}
+                <a className="wrap-child-active-25" onClick={()=>props.previousLetter(-1)}>
+                    &#8826;
+                </a>
 
                 <div
                     style={{color: randomColor}}
@@ -36,9 +36,9 @@ const {letters, current} = props
                 </div>
 
 
-                {/*/!*<a className="wrap-child-active-25" onClick={next}>*!/*/}
-                {/*    &#8827;*/}
-                {/*</a>*/}
+                <a className="wrap-child-active-25" onClick={()=> props.nextLetter(1)}>
+                    &#8827;
+                </a>
 
             </div>
 
@@ -56,8 +56,14 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
 
-    changeCreateModal: (value) => dispatch({
-        type: 'CHANGE_CREATE_MODAL',
+    previousLetter: (value) => dispatch({
+        type: 'PREVIOUS_LETTER',
+        payload: {
+            value: value
+        }
+    }),
+    nextLetter: (value) => dispatch({
+        type: 'NEXT_LETTER',
         payload: {
             value: value
         }

@@ -2,14 +2,14 @@ import React from "react";
 import "./upperLineAlph.css";
 
 import {connect} from "react-redux";
-//const {letters, current} = props
+
 
 const UpperLineAlph = (props) => {
 
     return <div className='center-div'>
         <div className="all-alph">
             {props.letters.map((el, i) =>
-                i === props.count ? (
+                i === props.current ? (
                     <span className={`selected ${[0, 4, 8, 14, 20, 24].includes(i) ? 'vowels' : ''}`} key={i}>
                       {el.letter}
                     </span>
