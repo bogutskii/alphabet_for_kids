@@ -9,6 +9,7 @@ import {connect} from "react-redux";
 
 const Alphabet = (props) => {
 const {letters, current} = props
+
     let randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 
 
@@ -17,7 +18,7 @@ const {letters, current} = props
         <div>
 
 
-            {/*<UpperLineAlph abc={abc} count={count} setCount={(count => setCount(count))}/>*/}
+            <UpperLineAlph/>
 
 
             <div className="wrap">
@@ -30,7 +31,7 @@ const {letters, current} = props
                     style={{color: randomColor}}
                     className="wrap-child-active-50"
                 >
-                    {props.letters[props.current.currentIndex].letter}
+                    {props.letters[props.current].letter}
 
                 </div>
 
@@ -42,7 +43,7 @@ const {letters, current} = props
             </div>
 
 
-             <h4>{props.current.currentIndex + 1} / 26 </h4>
+             <h4>{props.current + 1} / 26 </h4>
         </div>
     );
 };
@@ -50,7 +51,7 @@ const {letters, current} = props
 
 const mapStateToProps = (state) => ({
     letters: state.letters,
-    current: state.current
+    current: state.current.currentIndex
 })
 
 const mapDispatchToProps = (dispatch) => ({
