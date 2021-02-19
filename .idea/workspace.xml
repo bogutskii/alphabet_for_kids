@@ -19,12 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aef01aa9-c622-4849-9793-9bfb8ce043e4" name="Default Changelist" comment="">
+    <list default="true" id="aef01aa9-c622-4849-9793-9bfb8ce043e4" name="Default Changelist" comment="-old store convert">
+      <change afterPath="$PROJECT_DIR$/src/Alphabet_old.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Alphabet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alphabet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/Accordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/Accordion.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Comonents/Stats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/Stats.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/redux/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/redux/reducers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,20 +55,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Comonents" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/.idea" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.App.js">
@@ -138,7 +138,7 @@
       <workItem from="1612157715820" duration="5805000" />
       <workItem from="1612313041814" duration="5097000" />
       <workItem from="1612417722246" duration="4663000" />
-      <workItem from="1613363701365" duration="6920000" />
+      <workItem from="1613363701365" duration="9816000" />
     </task>
     <task id="LOCAL-00001" summary="done, Helping children learn the English alphabet.">
       <created>1597644735428</created>
@@ -343,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613633333936</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="-old store convert">
+      <created>1613634441570</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1613634441570</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,13 +392,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="-old store convert" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="347" y="25" width="846" height="828" key="CommitChangelistDialog2" timestamp="1613633333780">
+    <state x="347" y="25" width="846" height="828" key="CommitChangelistDialog2" timestamp="1613717083027">
       <screen x="0" y="25" width="1680" height="963" />
     </state>
     <state x="347" y="25" key="CommitChangelistDialog2/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1612418160499" />
     <state x="297" y="23" width="846" height="828" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1609530233374" />
     <state x="297" y="23" width="846" height="832" key="CommitChangelistDialog2/0.23.1440.832@0.23.1440.832" timestamp="1606516423158" />
-    <state x="347" y="25" key="CommitChangelistDialog2/0.25.1680.963@0.25.1680.963" timestamp="1613633333780" />
+    <state x="347" y="25" key="CommitChangelistDialog2/0.25.1680.963@0.25.1680.963" timestamp="1613717083027" />
     <state width="1419" height="85" key="GridCell.Tab.0.bottom" timestamp="1613540142626">
       <screen x="0" y="25" width="1680" height="963" />
     </state>
@@ -468,13 +475,13 @@
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="3" y="129" key="SettingsEditor/0.23.1440.828@0.23.1440.828" timestamp="1609402744470" />
-    <state x="373" y="212" key="Vcs.Push.Dialog.v2" timestamp="1613544250828">
+    <state x="373" y="212" key="Vcs.Push.Dialog.v2" timestamp="1613634443313">
       <screen x="0" y="25" width="1680" height="963" />
     </state>
     <state x="373" y="212" key="Vcs.Push.Dialog.v2/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1612418162283" />
     <state x="320" y="184" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1609530234892" />
     <state x="320" y="185" key="Vcs.Push.Dialog.v2/0.23.1440.832@0.23.1440.832" timestamp="1606516426091" />
-    <state x="373" y="212" key="Vcs.Push.Dialog.v2/0.25.1680.963@0.25.1680.963" timestamp="1613544250828" />
+    <state x="373" y="212" key="Vcs.Push.Dialog.v2/0.25.1680.963@0.25.1680.963" timestamp="1613634443313" />
     <state x="543" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609393998768">
       <screen x="0" y="23" width="1440" height="828" />
     </state>

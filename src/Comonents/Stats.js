@@ -4,7 +4,7 @@ import Accordion from "./Accordion"
 import {connect} from "react-redux";
 
 
-export default function Stats (props){
+const Stats = (props)=>{
         return (
             <div>
                 <h1>Your score!</h1>
@@ -37,4 +37,4 @@ const mapDispatchToProps = (dispatch) => ({
 })
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(Stats);
