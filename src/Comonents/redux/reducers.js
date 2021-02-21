@@ -70,9 +70,9 @@ const alphabet = (state = initialState, action) => {
         case 'NEXT_LETTER':
             let newNextIndex = state.current.currentIndex
             if (newNextIndex === 25) {
-                newIndex = 0;
+                newNextIndex = 0;
             } else {
-                ++newNextIndex
+                newNextIndex++
             }
             return {
                 ...state, current: {...state.current, currentIndex: newNextIndex}

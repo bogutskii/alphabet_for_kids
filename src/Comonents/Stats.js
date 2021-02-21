@@ -8,12 +8,12 @@ const Stats = (props)=>{
         return (
             <div>
                 <h1>Your score!</h1>
-                <Accordion title={"Correct: "+ props.results.correct}
-                           children={props.results.corList.join(', ')}/>
-                <Accordion title={"Wrong: " + props.results.incorrect}
-                           children={props.results.incList.join(', ')}/>
-                <Accordion title={"Skipped: " + props.results.pasS}
-                           children={props.results.pasList.join(', ')}/>
+                <Accordion title={"Correct: "+ props.stats.correct}
+                           children={props.stats.corList.join(', ')}/>
+                <Accordion title={"Wrong: " + props.stats.incorrect}
+                           children={props.stats.incList.join(', ')}/>
+                <Accordion title={"Skipped: " + props.stats.skip}
+                           children={props.stats.pasList.join(', ')}/>
 
             </div>
         );
@@ -21,14 +21,14 @@ const Stats = (props)=>{
 
 
 const mapStateToProps = (state) => ({
-    letters: state.letters,
-    test: state.test,
+    stats: state.stats,
+
 })
 
 const mapDispatchToProps = (dispatch) => ({
 
     changeCreateModal: (value) => dispatch({
-        type: 'CHANGE_CREATE_MODAL',
+        type: 'SHOW_OR_HIDE_STATS',
         payload: {
             value: value
         }
