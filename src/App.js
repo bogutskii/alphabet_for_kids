@@ -7,6 +7,7 @@ import VideoPlaylist from './Comonents/VideoPlaylist'
 import AboutPage from './Comonents/AboutPage'
 import Stats from "./Comonents/Stats";
 import {connect} from 'react-redux'
+import TestButtons from "./Comonents/TestButtons";
 
 
 function App(props) {
@@ -17,10 +18,12 @@ function App(props) {
                 <Navigation/>
                 {/*<Route path="/" render={Alphabet}/>*/}
                 <Alphabet />
-                <Route path='/Alphabet' render={Alphabet}/>
+                {/*<Route exact path='/' render={Alphabet}/>*/}
                 <Route path='/Video' render={VideoPlaylist}/>
                 <Route path='/Stats' render={Stats}/>
                 <Route path='/AboutPage' render={AboutPage}/>
+<TestButtons/>
+                <Stats/>
             </div>
         </Router>
     );

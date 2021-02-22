@@ -8,15 +8,15 @@ const Stats = (props)=>{
         return (
             <div>
                 <h1>Your score!</h1>
-                <Accordion title={"Correct: "+ props.stats.correct}
+                <Accordion title={"Correct: "+ props.stats.corList.length}
                            children={props.stats.corList.join(', ')}/>
-                <Accordion title={"Wrong: " + props.stats.incorrect}
+                <Accordion title={"Wrong: " + props.stats.incList.length}
                            children={props.stats.incList.join(', ')}/>
-                <Accordion title={"Skipped: " + props.stats.skip}
+                <Accordion title={"Skipped: " + props.stats.pasList.length}
                            children={props.stats.pasList.join(', ')}/>
 
             </div>
-        );
+        )
     };
 
 
@@ -38,3 +38,4 @@ const mapDispatchToProps = (dispatch) => ({
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(Stats);
+// export default Stats

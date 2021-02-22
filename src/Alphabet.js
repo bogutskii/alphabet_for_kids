@@ -8,7 +8,7 @@ import {connect} from "react-redux";
 
 
 const Alphabet = (props) => {
-// const {letters, current} = props
+    const {letters, current} = props
 
     let randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 

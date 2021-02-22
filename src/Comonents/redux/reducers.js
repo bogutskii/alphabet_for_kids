@@ -77,7 +77,42 @@ const alphabet = (state = initialState, action) => {
             return {
                 ...state, current: {...state.current, currentIndex: newNextIndex}
             }
+        case 'CORRECT_LETTER':
+            let newCorrectIndex = state.current.currentIndex
+            if (newCorrectIndex === 25) {
+                newCorrectIndex = 0;
+            } else {
+                newCorrectIndex++
+            }
+            return {
+                ...state, current: {...state.current, currentIndex: newCorrectIndex},
+                stats: {...state.stats, corList: [...state.stats.corList, state.letters[action.payload.value].letter]}
 
+            }
+        case 'WRONG_LETTER':
+            let newIncorrectIndex = state.current.currentIndex
+            if (newIncorrectIndex === 25) {
+                newIncorrectIndex = 0;
+            } else {
+                newIncorrectIndex++
+            }
+            return {
+                ...state, current: {...state.current, currentIndex: newIncorrectIndex},
+                stats: {...state.stats, incList: [...state.stats.incList, state.letters[action.payload.value].letter]}
+
+            }
+        case 'SKIP_LETTER':
+            let newSkipIndex = state.current.currentIndex
+            if (newSkipIndex === 25) {
+                newSkipIndex = 0;
+            } else {
+                newSkipIndex++
+            }
+            return {
+                ...state, current: {...state.current, currentIndex: newSkipIndex},
+                stats: {...state.stats, pasList: [...state.stats.pasList, state.letters[action.payload.value].letter]}
+
+            }
 
         default:
             return state

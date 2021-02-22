@@ -20,14 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aef01aa9-c622-4849-9793-9bfb8ce043e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Comonents/AboutPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Comonents/TestButtons.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Alphabet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alphabet.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/Accordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/Accordion.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Comonents/NavBar/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/NavBar/Navigation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Comonents/Stats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/Stats.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Comonents/redux/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/redux/reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/alphabet-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/alphabet-style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +143,7 @@
       <workItem from="1612313041814" duration="5097000" />
       <workItem from="1612417722246" duration="4663000" />
       <workItem from="1613363701365" duration="14339000" />
-      <workItem from="1613880065100" duration="3442000" />
+      <workItem from="1613880065100" duration="10219000" />
     </task>
     <task id="LOCAL-00001" summary="done, Helping children learn the English alphabet.">
       <created>1597644735428</created>
@@ -377,7 +376,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613720603056</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="some fix">
+      <created>1613892851821</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1613892851821</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +425,8 @@
     <MESSAGE value="-rebuild main page" />
     <MESSAGE value="UpperLineAlphabet" />
     <MESSAGE value="previus and bnext letter" />
-    <option name="LAST_COMMIT_MESSAGE" value="previus and bnext letter" />
+    <MESSAGE value="some fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="some fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="306" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613880260727">
@@ -430,13 +437,13 @@
       <screen x="0" y="25" width="1680" height="963" />
     </state>
     <state x="576" y="291" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1613880163843" />
-    <state x="347" y="25" width="846" height="828" key="CommitChangelistDialog2" timestamp="1613720602835">
+    <state x="347" y="25" width="846" height="828" key="CommitChangelistDialog2" timestamp="1613892851591">
       <screen x="0" y="25" width="1680" height="963" />
     </state>
     <state x="347" y="25" key="CommitChangelistDialog2/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1612418160499" />
     <state x="297" y="23" width="846" height="828" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1609530233374" />
     <state x="297" y="23" width="846" height="832" key="CommitChangelistDialog2/0.23.1440.832@0.23.1440.832" timestamp="1606516423158" />
-    <state x="347" y="25" key="CommitChangelistDialog2/0.25.1680.963@0.25.1680.963" timestamp="1613720602835" />
+    <state x="347" y="25" key="CommitChangelistDialog2/0.25.1680.963@0.25.1680.963" timestamp="1613892851591" />
     <state width="1419" height="83" key="GridCell.Tab.0.bottom" timestamp="1613880533024">
       <screen x="0" y="25" width="1680" height="963" />
     </state>
@@ -530,13 +537,13 @@
     </state>
     <state x="372" y="138" key="SettingsEditor/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1613880440628" />
     <state x="3" y="129" key="SettingsEditor/0.23.1440.828@0.23.1440.828" timestamp="1609402744470" />
-    <state x="373" y="212" key="Vcs.Push.Dialog.v2" timestamp="1613720604738">
+    <state x="373" y="212" key="Vcs.Push.Dialog.v2" timestamp="1613892855051">
       <screen x="0" y="25" width="1680" height="963" />
     </state>
     <state x="373" y="212" key="Vcs.Push.Dialog.v2/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1612418162283" />
     <state x="320" y="184" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1609530234892" />
     <state x="320" y="185" key="Vcs.Push.Dialog.v2/0.23.1440.832@0.23.1440.832" timestamp="1606516426091" />
-    <state x="373" y="212" key="Vcs.Push.Dialog.v2/0.25.1680.963@0.25.1680.963" timestamp="1613720604738" />
+    <state x="373" y="212" key="Vcs.Push.Dialog.v2/0.25.1680.963@0.25.1680.963" timestamp="1613892855051" />
     <state x="543" y="354" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609393998768">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
