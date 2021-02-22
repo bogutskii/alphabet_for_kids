@@ -5,18 +5,16 @@
 body {
   background: linear-gradient(
           289deg,
-          #2056db,
-          #db6420,
-          #27790f,
+          #7192e5,
+          #ef9e71,
           #97690c,
-          #c311d5,
-          #a15adb,
-          #0f4c5f,
-          #1c521c,
-          #3f28c0,
-          #ea0554,
-          #155550,
-          #6f742c
+          #e08de8,
+          #ce9ff6,
+          #8dcfe5,
+          #a9d0a9,
+          #efa1bd,
+          #96e8e2,
+          #e7ec9d
   );
   background-size: 2400% 2400%;
 

@@ -23,7 +23,7 @@ const Alphabet = (props) => {
 
             <div className="wrap">
 
-                <a className="wrap-child-active-25" onClick={()=>props.previousLetter(-1)}>
+                <a className="wrap-child-active-25" onClick={() => props.previousLetter(-1)}>
                     &#8826;
                 </a>
 
@@ -32,18 +32,18 @@ const Alphabet = (props) => {
                     className="wrap-child-active-50"
                 >
                     {props.letters[props.current].letter}
+                    <Word/>
 
                 </div>
 
-
-                <a className="wrap-child-active-25" onClick={()=> props.nextLetter(1)}>
+                <a className="wrap-child-active-25" onClick={() => props.nextLetter(1)}>
                     &#8827;
                 </a>
 
             </div>
 
 
-             <h4>{props.current + 1} / 26 </h4>
+            <h4>{props.current + 1} / 26 </h4>
         </div>
     );
 };
