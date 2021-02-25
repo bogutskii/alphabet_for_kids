@@ -34,7 +34,7 @@ const TestButtons = (props) => {
         {letter: "Y", words: "Yes", transaction: "[wai]"},
         {letter: "Z", words: "Zebra", transaction: "[zed]"}
     ]
-    console.log(letters.map((obj,i)=> {...obj, id: i}))
+    //console.log(letters.map((obj,i)=> {...obj, id: i}))
 
 
 

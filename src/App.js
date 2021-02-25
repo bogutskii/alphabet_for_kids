@@ -4,26 +4,26 @@ import Alphabet from "./Alphabet";
 import {BrowserRouter as Router, Route} from "react-router-dom";
 import Navigation from './Comonents/NavBar/Navigation';
 import VideoPlaylist from './Comonents/VideoPlaylist'
-import AboutPage from './Comonents/AboutPage'
-import Stats from "./Comonents/Stats";
+import AboutPage from './Comonents/aboutPage'
+import Test from "./Comonents/test";
 import {connect} from 'react-redux'
-import TestButtons from "./Comonents/TestButtons";
+
 
 
 function App(props) {
-
+const {state} = props
     return (
         <Router>
             <div className="App">
                 <Navigation/>
-                {/*<Route path="/" render={Alphabet}/>*/}
-                <Alphabet />
-                {/*<Route exact path='/' render={Alphabet}/>*/}
+                <Route exact path="/" component ={Alphabet}/>
+                {/*<Alphabet />*/}
+                {/*<Route exact path='/' ><Alphabet/> </Route>*/}
                 <Route path='/Video' render={VideoPlaylist}/>
-                <Route path='/Stats' render={Stats}/>
+                <Route path='/Test' component={Test}/>
                 <Route path='/AboutPage' render={AboutPage}/>
-<TestButtons/>
-                <Stats/>
+
+                {/*<Stats/>*/}
             </div>
         </Router>
     );

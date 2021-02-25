@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./alphabet-style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import UpperLineAlph from "../src/Comonents/UpperLineAlph"
-import Stats from "./Comonents/Stats";
-import Word from "./Comonents/Word";
+import UpperLineAlph from "./Comonents/upperLineAlph"
+import Stats from "./Comonents/test";
+import Word from "./Comonents/word";
 
 
 const Alphabet = (props) => {
