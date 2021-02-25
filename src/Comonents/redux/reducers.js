@@ -143,8 +143,8 @@ const alphabet = (state = initialState, action) => {
                 stats: {...state.stats, pasList: [...state.stats.pasList, state.letters[action.payload.value].letter]}
 
             }
-        case 'NEXT_TEXT_COUNTER':
-            let newNextTestIndex = state.current.currentIndex
+        case 'NEXT_TEST_COUNTER':
+            let newNextTestIndex = state.test.testCounter
             if (newNextTestIndex === 25) {
                 newNextTestIndex = 0;
             } else {
@@ -155,7 +155,16 @@ const alphabet = (state = initialState, action) => {
             }
         case 'START_TEST':
             return {
-                ...state, test: {...state.test, testCounter: 0, testStart: true, alphabetForTest: action.payload.value }
+                ...state, test: {...state.test, testCounter: 0, testStart: true, alphabetForTest: action.payload.value },
+                stats: {
+                    showStats: false,
+                    correct: 0,
+                    incorrect: 0,
+                    skip: 0,
+                    corList: [],
+                    incList: [],
+                    pasList: []
+                }
             }
 
 

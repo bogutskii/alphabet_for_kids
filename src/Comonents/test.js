@@ -22,9 +22,7 @@ const Test = (props) => {
                 className="wrap-child-active-50"
             >
                 <ul>
-                    {[...test.alphabetForTest].sort(() => Math.random() - 0.5).map(
-                        (letter, i) => <li>{letter}</li>
-                    )}
+                    {test.alphabetForTest.map( (letter, i) => i === test.testCounter ? <li>{letter}</li>: <></>)}
                 </ul>
 
             </div>
