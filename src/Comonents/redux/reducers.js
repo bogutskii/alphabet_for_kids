@@ -28,6 +28,7 @@ const initialState = {
         {letter: "Z", words: "Zebra", transaction: "[zed]"}
     ],
     stats: {
+        showStats: false,
         correct: 0,
         incorrect: 0,
         skip: 0,
@@ -64,7 +65,8 @@ const initialState = {
             "Y",
             "Z"
         ],
-        testStart: false
+        testStart: !false,
+        testCounter:0
     },
     modals: {
         modal: false
@@ -141,6 +143,21 @@ const alphabet = (state = initialState, action) => {
                 stats: {...state.stats, pasList: [...state.stats.pasList, state.letters[action.payload.value].letter]}
 
             }
+        case 'NEXT_TEXT_COUNTER':
+            let newNextTestIndex = state.current.currentIndex
+            if (newNextTestIndex === 25) {
+                newNextTestIndex = 0;
+            } else {
+                newNextTestIndex++
+            }
+            return {
+                ...state, test: {...state.test, testCounter: newNextTestIndex}
+            }
+        case 'START_TEST':
+            return {
+                ...state, test: {...state.test, testCounter: 0, testStart: true, alphabetForTest: action.payload.value }
+            }
+
 
         default:
             return state

@@ -20,17 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aef01aa9-c622-4849-9793-9bfb8ce043e4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Comonents/stats.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Alphabet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alphabet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Alphabet_old.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alphabet_old.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/AboutPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/aboutPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/NavBar/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/NavBar/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/Stats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/TestButtons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/testButtons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/UpperLineAlph.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/upperLineAlph.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/Word.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/word.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Comonents/redux/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/redux/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comonents/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comonents/testButtons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/testButtons.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +141,7 @@
       <workItem from="1612313041814" duration="5097000" />
       <workItem from="1612417722246" duration="4663000" />
       <workItem from="1613363701365" duration="14339000" />
-      <workItem from="1613880065100" duration="24039000" />
+      <workItem from="1613880065100" duration="27387000" />
     </task>
     <task id="LOCAL-00001" summary="done, Helping children learn the English alphabet.">
       <created>1597644735428</created>
@@ -408,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614066078281</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="-fix routing&#10;-start working on testing part">
+      <created>1614221768216</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1614221768216</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,7 +429,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="deploy" />
     <MESSAGE value="restart" />
     <MESSAGE value="-upper lower case both &#10;-add quiz&#10;-css" />
     <MESSAGE value="-ref up line alp" />
@@ -453,7 +453,8 @@
     <MESSAGE value="Test buttons" />
     <MESSAGE value="-words and transcriptions" />
     <MESSAGE value="-sorting" />
-    <option name="LAST_COMMIT_MESSAGE" value="-sorting" />
+    <MESSAGE value="-fix routing&#10;-start working on testing part" />
+    <option name="LAST_COMMIT_MESSAGE" value="-fix routing&#10;-start working on testing part" />
   </component>
   <component name="WindowStateProjectService">
     <state x="306" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613880260727">
@@ -464,9 +465,10 @@
       <screen x="0" y="25" width="1680" height="963" />
     </state>
     <state x="576" y="291" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1613880163843" />
-    <state x="347" y="25" width="846" height="828" key="CommitChangelistDialog2" timestamp="1614066078077">
-      <screen x="0" y="25" width="1680" height="963" />
+    <state x="347" y="25" width="846" height="828" key="CommitChangelistDialog2" timestamp="1614221767981">
+      <screen x="0" y="25" width="1680" height="1025" />
     </state>
+    <state x="347" y="25" key="CommitChangelistDialog2/0.-1667.3008.1605/0.25.1680.1025@0.25.1680.1025" timestamp="1614221767981" />
     <state x="347" y="25" key="CommitChangelistDialog2/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1612418160499" />
     <state x="297" y="23" width="846" height="828" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1609530233374" />
     <state x="297" y="23" width="846" height="832" key="CommitChangelistDialog2/0.23.1440.832@0.23.1440.832" timestamp="1606516423158" />
@@ -564,9 +566,10 @@
     </state>
     <state x="372" y="138" key="SettingsEditor/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1613880440628" />
     <state x="3" y="129" key="SettingsEditor/0.23.1440.828@0.23.1440.828" timestamp="1609402744470" />
-    <state x="373" y="212" key="Vcs.Push.Dialog.v2" timestamp="1614066080582">
-      <screen x="0" y="25" width="1680" height="963" />
+    <state x="373" y="224" key="Vcs.Push.Dialog.v2" timestamp="1614221769778">
+      <screen x="0" y="25" width="1680" height="1025" />
     </state>
+    <state x="373" y="224" key="Vcs.Push.Dialog.v2/0.-1667.3008.1605/0.25.1680.1025@0.25.1680.1025" timestamp="1614221769778" />
     <state x="373" y="212" key="Vcs.Push.Dialog.v2/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1612418162283" />
     <state x="320" y="184" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1609530234892" />
     <state x="320" y="185" key="Vcs.Push.Dialog.v2/0.23.1440.832@0.23.1440.832" timestamp="1606516426091" />
