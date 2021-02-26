@@ -5,12 +5,12 @@ import {connect} from "react-redux";
 
 const TestButtons = (props) => {
 
-const {nextTest, correct, wrong, skip,testCounter} = props
+    const {nextTest, correct, wrong, skip, testCounter} = props
 
 
     return (
 
-        <div onClick={()=>nextTest()}>
+        <div onClick={() => nextTest()}>
             <button className="btn btn-secondary" onClick={() => correct(testCounter)}>
                 Correct
             </button>
@@ -54,12 +54,12 @@ const mapDispatchToProps = (dispatch) => ({
             value: value
         }
     }),
-        nextTest: (value) => dispatch({
-            type: 'NEXT_TEST_COUNTER',
-            payload: {
-                value: value
-            }
-        }),
+    nextTest: (value) => dispatch({
+        type: 'NEXT_TEST_COUNTER',
+        payload: {
+            value: value
+        }
+    }),
 
 })
 

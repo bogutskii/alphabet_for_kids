@@ -8,7 +8,10 @@ const Stats = (props) => {
     return (
 
         <div>
-            <h1>Your score!</h1>
+
+
+            <h1 className="gradient-text-animation">Your score!</h1>
+
             <Accordion title={"Correct: " + stats.corList.length}
                        children={stats.corList.join(', ')}/>
             <Accordion title={"Wrong: " + stats.incList.length}
@@ -22,7 +25,7 @@ const Stats = (props) => {
 
 
 const mapStateToProps = (state) => ({
-    stats: state.stats,
+    stats: state.stats
 
 
 })

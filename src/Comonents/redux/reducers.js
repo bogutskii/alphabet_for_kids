@@ -1,3 +1,5 @@
+import test from "../test";
+
 const initialState = {
     letters: [
         {letter: "A", words: "Apple", transaction: "[ei]"},
@@ -65,7 +67,7 @@ const initialState = {
             "Y",
             "Z"
         ],
-        testStart: !false,
+        testStart: false,
         testCounter:0
     },
     modals: {
@@ -116,7 +118,7 @@ const alphabet = (state = initialState, action) => {
             }
             return {
                 ...state, current: {...state.current, currentIndex: newCorrectIndex},
-                stats: {...state.stats, corList: [...state.stats.corList, state.letters[action.payload.value].letter]}
+                stats: {...state.stats, corList: [...state.stats.corList, state.test.alphabetForTest[action.payload.value]]}
 
             }
         case 'WRONG_LETTER':
@@ -145,13 +147,18 @@ const alphabet = (state = initialState, action) => {
             }
         case 'NEXT_TEST_COUNTER':
             let newNextTestIndex = state.test.testCounter
-            if (newNextTestIndex === 25) {
-                newNextTestIndex = 0;
+
+            if (newNextTestIndex >= 25) {
+
+              return   {...state, test: {...state.test, testCounter: 0, testStart: false},
+                  stats: {...state.stats, showStats: true}
+              }
             } else {
                 newNextTestIndex++
             }
             return {
                 ...state, test: {...state.test, testCounter: newNextTestIndex}
+
             }
         case 'START_TEST':
             return {

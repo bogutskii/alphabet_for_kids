@@ -1,63 +1,74 @@
 .App {
-  font-family: sans-serif;
-  text-align: center;
+    font-family: sans-serif;
+    text-align: center;
 }
-body {
-  background: linear-gradient(
-          145deg,
-          #7192e5,
-          #ef9e71,
-          #97690c,
-          #e08de8,
-          #ce9ff6,
-          #8dcfe5,
-          #a9d0a9,
-          #efa1bd,
-          #96e8e2,
-          #e7ec9d
-  );
-  background-size: 2400% 2400%;
 
-  -webkit-animation: fireBack 25s ease infinite;
-  -moz-animation: fireBack 25s ease infinite;
-  animation: fireBack 250s ease infinite;
+body {
+    background: linear-gradient(
+            121deg,
+            #7192e5,
+            #ef9e71,
+            #97690c,
+            #e08de8,
+            #ce9ff6,
+            #8dcfe5,
+            #a9d0a9,
+            #efa1bd,
+            #96e8e2,
+            #e7ec9d
+    );
+    background-size: 2400% 2400%;
+
+    -webkit-animation: fireBack 25s ease infinite;
+    -moz-animation: fireBack 25s ease infinite;
+    animation: fireBack 250s ease infinite;
 }
 
 @-webkit-keyframes fireBack {
-  0% {
-    background-position: 0% 52%;
-  }
-  50% {
-    background-position: 100% 49%;
-  }
-  100% {
-    background-position: 0% 52%;
-  }
+    0% {
+        background-position: 0% 52%;
+    }
+    50% {
+        background-position: 100% 49%;
+    }
+    100% {
+        background-position: 0% 52%;
+    }
 }
+
 @-moz-keyframes fireBack {
-  0% {
-    background-position: 0% 52%;
-  }
-  50% {
-    background-position: 100% 49%;
-  }
-  100% {
-    background-position: 0% 52%;
-  }
+    0% {
+        background-position: 0% 52%;
+    }
+    50% {
+        background-position: 100% 49%;
+    }
+    100% {
+        background-position: 0% 52%;
+    }
 }
+
 @keyframes fireBack {
-  0% {
-    background-position: 0% 52%;
-  }
-  50% {
-    background-position: 100% 49%;
-  }
-  100% {
-    background-position: 0% 52%;
-  }
+    0% {
+        background-position: 0% 52%;
+    }
+    50% {
+        background-position: 100% 49%;
+    }
+    100% {
+        background-position: 0% 52%;
+    }
 }
 
+.gradient-text-animation {
+    animation: flow 30s ease-in-out infinite;
+    background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
-.center-div{
+.center-div {
     margin: 0 auto;
 }

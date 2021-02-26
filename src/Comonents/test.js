@@ -14,30 +14,27 @@ const Test = (props) => {
 
     return (
         <div>
+
             <button onClick={() => startTest([...test.alphabetForTest].sort(() => Math.random() - 0.5))}>
                 Start test
             </button>
-            <div
-                style={{color: randomColor}}
-                className="wrap-child-active-50"
-            >
-                <ul>
-                    {test.alphabetForTest.map( (letter, i) => i === test.testCounter ? <li>{letter}</li>: <></>)}
-                </ul>
+            { test.testStart &&
+                <div
+                    style={{color: randomColor}}
+                    className="wrap-child-active-50"
+                >
+                    <ul>
+                        {test.alphabetForTest.map((letter, i) => i === test.testCounter ? <li>{letter}</li> : <></>)}
+                    </ul>
 
-            </div>
+                </div>
+            }
 
             {test.testStart && <TestButtons/>}
-
-            <h1>Your score!</h1>
-            <Accordion title={"Correct: " + stats.corList.length}
-                       children={stats.corList.join(', ')}/>
-            <Accordion title={"Wrong: " + stats.incList.length}
-                       children={stats.incList.join(', ')}/>
-            <Accordion title={"Skipped: " + stats.pasList.length}
-                       children={stats.pasList.join(', ')}/>
+            {test.testStart && <h3>Left {26 - test.testCounter}</h3>}
 
             {stats.showStats && <Stats/>}
+
         </div>
     )
 };
@@ -67,4 +64,3 @@ const mapDispatchToProps = (dispatch) => ({
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(Test);
-// export default Stats
