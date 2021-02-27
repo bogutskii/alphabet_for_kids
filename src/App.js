@@ -5,7 +5,7 @@ import {BrowserRouter as Router, Route} from "react-router-dom";
 import Navigation from './Comonents/NavBar/Navigation';
 import VideoPlaylist from './Comonents/VideoPlaylist'
 import AboutPage from './Comonents/aboutPage'
-import Test from "./Comonents/test";
+import Test from "./Comonents/test/test";
 import {connect} from 'react-redux'
 
 

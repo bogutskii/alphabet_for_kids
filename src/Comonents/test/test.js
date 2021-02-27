@@ -1,8 +1,8 @@
 import React from "react";
-import Accordion from "./Accordion"
+import Accordion from "../Accordion"
 import {connect} from "react-redux";
 import TestButtons from "./testButtons";
-import '../alphabet-style.css'
+import '../../alphabet-style.css'
 import Stats from "./stats";
 
 
@@ -18,20 +18,20 @@ const Test = (props) => {
             <button onClick={() => startTest([...test.alphabetForTest].sort(() => Math.random() - 0.5))}>
                 Start test
             </button>
-            { test.testStart &&
-                <div
-                    style={{color: randomColor}}
-                    className="wrap-child-active-50"
-                >
-                    <ul>
-                        {test.alphabetForTest.map((letter, i) => i === test.testCounter ? <li>{letter}</li> : <></>)}
-                    </ul>
+            {test.testStart &&
+            <div
+                style={{color: randomColor}}
+                className="wrap-child-active-50"
+            >
+                <ul>
+                    {test.alphabetForTest.map((letter, i) => i === test.testCounter ? <li>{letter}</li> : <></>)}
+                </ul>
 
-                </div>
+            </div>
             }
 
             {test.testStart && <TestButtons/>}
-            {test.testStart && <h3>Left {26 - test.testCounter}</h3>}
+            {test.testStart && <h3>Left:dx {26 - test.testCounter}</h3>}
 
             {stats.showStats && <Stats/>}
 

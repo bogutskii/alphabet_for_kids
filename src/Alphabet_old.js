@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./alphabet-style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import UpperLineAlph from "./Comonents/upperLineAlph"
-import Stats from "./Comonents/test";
+import Stats from "./Comonents/test/test";
 import Word from "./Comonents/word";
 
 

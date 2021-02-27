@@ -20,12 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aef01aa9-c622-4849-9793-9bfb8ce043e4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Comonents/ControlCase.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Alphabet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alphabet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Alphabet_old.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alphabet_old.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Comonents/redux/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/redux/reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/stats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/stats.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/testButtons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/testButtons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comonents/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/test/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comonents/testButtons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/test/testButtons.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,11 +65,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Comonents/test" />
       <recent name="$PROJECT_DIR$/src/Comonents" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/.idea" />
       <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Comonents" />
@@ -142,7 +144,7 @@
       <workItem from="1612313041814" duration="5097000" />
       <workItem from="1612417722246" duration="4663000" />
       <workItem from="1613363701365" duration="14339000" />
-      <workItem from="1613880065100" duration="33831000" />
+      <workItem from="1613880065100" duration="35971000" />
     </task>
     <task id="LOCAL-00001" summary="done, Helping children learn the English alphabet.">
       <created>1597644735428</created>
@@ -424,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614239951496</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="- Test and Stats">
+      <created>1614307872986</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1614307872986</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,7 +453,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="-ref up line alp" />
     <MESSAGE value="-add README.md" />
     <MESSAGE value="-add words" />
     <MESSAGE value="-css fix" />
@@ -469,7 +477,8 @@
     <MESSAGE value="-fix routing&#10;-start working on testing part" />
     <MESSAGE value="&#10;-testing part" />
     <MESSAGE value="&#10;-testing list and sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;-testing list and sort" />
+    <MESSAGE value="- Test and Stats" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Test and Stats" />
   </component>
   <component name="WindowStateProjectService">
     <state x="306" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613880260727">
@@ -480,11 +489,11 @@
       <screen x="0" y="25" width="1680" height="963" />
     </state>
     <state x="576" y="291" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1613880163843" />
-    <state x="347" y="25" width="846" height="828" key="CommitChangelistDialog2" timestamp="1614239951301">
+    <state x="347" y="25" width="846" height="828" key="CommitChangelistDialog2" timestamp="1614307872808">
       <screen x="0" y="25" width="1680" height="963" />
     </state>
     <state x="347" y="25" key="CommitChangelistDialog2/0.-1667.3008.1605/0.25.1680.1025@0.25.1680.1025" timestamp="1614221767981" />
-    <state x="347" y="25" key="CommitChangelistDialog2/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1612418160499" />
+    <state x="347" y="25" key="CommitChangelistDialog2/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1614307872808" />
     <state x="297" y="23" width="846" height="828" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1609530233374" />
     <state x="297" y="23" width="846" height="832" key="CommitChangelistDialog2/0.23.1440.832@0.23.1440.832" timestamp="1606516423158" />
     <state x="347" y="25" key="CommitChangelistDialog2/0.25.1680.963@0.25.1680.963" timestamp="1614239951301" />
@@ -581,11 +590,11 @@
     </state>
     <state x="372" y="138" key="SettingsEditor/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1613880440628" />
     <state x="3" y="129" key="SettingsEditor/0.23.1440.828@0.23.1440.828" timestamp="1609402744470" />
-    <state x="373" y="224" key="Vcs.Push.Dialog.v2" timestamp="1614221769778">
-      <screen x="0" y="25" width="1680" height="1025" />
+    <state x="373" y="212" key="Vcs.Push.Dialog.v2" timestamp="1614307874693">
+      <screen x="0" y="25" width="1680" height="963" />
     </state>
     <state x="373" y="224" key="Vcs.Push.Dialog.v2/0.-1667.3008.1605/0.25.1680.1025@0.25.1680.1025" timestamp="1614221769778" />
-    <state x="373" y="212" key="Vcs.Push.Dialog.v2/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1612418162283" />
+    <state x="373" y="212" key="Vcs.Push.Dialog.v2/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1614307874693" />
     <state x="320" y="184" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1609530234892" />
     <state x="320" y="185" key="Vcs.Push.Dialog.v2/0.23.1440.832@0.23.1440.832" timestamp="1606516426091" />
     <state x="373" y="212" key="Vcs.Push.Dialog.v2/0.25.1680.963@0.25.1680.963" timestamp="1614066080582" />
