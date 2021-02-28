@@ -173,6 +173,21 @@ const alphabet = (state = initialState, action) => {
                     pasList: []
                 }
             }
+        case 'TOGGLE_CASE':
+            let alpCopy = [...state.test.alphabetForTest];
+            if(action.payload.activeCase === 'upper'){
+                 alpCopy = alpCopy.map(el=> el[0].toUpperCase())
+            } else if(action.payload.activeCase === 'lower'){
+                alpCopy = alpCopy.map(el=> el[0].toLowerCase())
+            } else if(action.payload.activeCase === 'both'){
+                alpCopy = alpCopy.map(el=> el[0].toUpperCase() + el[0].toLowerCase())
+            } else {
+                return state
+            }
+            return {
+                ...state, test: {...state.test, alphabetForTest: alpCopy },
+
+            }
 
 
         default:

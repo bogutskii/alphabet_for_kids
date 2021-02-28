@@ -4,6 +4,7 @@ import {connect} from "react-redux";
 import TestButtons from "./testButtons";
 import '../../alphabet-style.css'
 import Stats from "./stats";
+import ControlCase from "../ControlCase";
 
 
 const Test = (props) => {
@@ -29,9 +30,9 @@ const Test = (props) => {
 
             </div>
             }
-
+            <ControlCase/>
             {test.testStart && <TestButtons/>}
-            {test.testStart && <h3>Left:dx {26 - test.testCounter}</h3>}
+            {test.testStart && <h3>Left: {26 - test.testCounter}</h3>}
 
             {stats.showStats && <Stats/>}
 
@@ -59,6 +60,7 @@ const mapDispatchToProps = (dispatch) => ({
             value: value
         }
     }),
+
 
 })
 
