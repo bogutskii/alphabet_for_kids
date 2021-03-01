@@ -19,14 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aef01aa9-c622-4849-9793-9bfb8ce043e4" name="Default Changelist" comment="">
+    <list default="true" id="aef01aa9-c622-4849-9793-9bfb8ce043e4" name="Default Changelist" comment="-buttons case control in test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/ControlCase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/ControlCase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/redux/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/redux/reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/stats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/test/stats.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/test/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/test/test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +137,7 @@
       <workItem from="1612313041814" duration="5097000" />
       <workItem from="1612417722246" duration="4663000" />
       <workItem from="1613363701365" duration="14339000" />
-      <workItem from="1613880065100" duration="45144000" />
+      <workItem from="1613880065100" duration="49826000" />
     </task>
     <task id="LOCAL-00001" summary="done, Helping children learn the English alphabet.">
       <created>1597644735428</created>
@@ -439,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614412290062</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="-buttons case control in test">
+      <created>1614487549624</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1614487549624</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,7 +460,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="-add words" />
     <MESSAGE value="-css fix" />
     <MESSAGE value="-add TRANSCRIPTION" />
     <MESSAGE value="-add margin upper line&#10;-del dropdown" />
@@ -484,7 +484,8 @@
     <MESSAGE value="&#10;-testing list and sort" />
     <MESSAGE value="- Test and Stats" />
     <MESSAGE value="control Case" />
-    <option name="LAST_COMMIT_MESSAGE" value="control Case" />
+    <MESSAGE value="-buttons case control in test" />
+    <option name="LAST_COMMIT_MESSAGE" value="-buttons case control in test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="306" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613880260727">
@@ -495,14 +496,16 @@
       <screen x="0" y="25" width="1680" height="963" />
     </state>
     <state x="576" y="291" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1613880163843" />
-    <state x="347" y="25" width="846" height="828" key="CommitChangelistDialog2" timestamp="1614412289860">
-      <screen x="0" y="25" width="1680" height="963" />
+    <state x="297" y="25" width="831" height="675" key="CommitChangelistDialog2" timestamp="1614579508657">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
+    <state x="297" y="25" width="831" height="675" key="CommitChangelistDialog2/-2325.-1667.3008.1667/683.-1667.3008.1667/0.25.1440.875@0.25.1440.875" timestamp="1614579508657" />
     <state x="347" y="25" key="CommitChangelistDialog2/0.-1667.3008.1605/0.25.1680.1025@0.25.1680.1025" timestamp="1614221767981" />
     <state x="347" y="25" key="CommitChangelistDialog2/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1614307872808" />
     <state x="297" y="23" width="846" height="828" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1609530233374" />
     <state x="297" y="23" width="846" height="832" key="CommitChangelistDialog2/0.23.1440.832@0.23.1440.832" timestamp="1606516423158" />
     <state x="347" y="25" key="CommitChangelistDialog2/0.25.1680.963@0.25.1680.963" timestamp="1614412289860" />
+    <state x="1304" y="-1667" key="CommitChangelistDialog2/683.-1667.3008.1667/-2325.-1667.3008.1667/0.25.1440.822@683.-1667.3008.1667" timestamp="1614487549407" />
     <state width="1419" height="83" key="GridCell.Tab.0.bottom" timestamp="1613880533024">
       <screen x="0" y="25" width="1680" height="963" />
     </state>

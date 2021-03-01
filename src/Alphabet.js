@@ -29,7 +29,7 @@ const Alphabet = (props) => {
 
                 <div
                     style={{color: randomColor}}
-                    className="wrap-child-active-50"
+                    className="wrap-child-active-50 fadeInRight"
                 >
                     {props.letters[props.current].letter}
                     <Word/>
