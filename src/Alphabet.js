@@ -2,20 +2,31 @@ import React, {useState} from "react";
 import "./alphabet-style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import UpperLineAlph from "./Comonents/upperLineAlph"
-import Stats from "./Comonents/test/test";
+//import Stats from "./Comonents/test/test";
 import Word from "./Comonents/word";
 import {connect} from "react-redux";
 
 
 const Alphabet = (props) => {
-    const {letters, current} = props
+    const {letters, current, effects, previousLetter, nextLetter} = props
 
     let randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    let nextEffect = effects[Math.floor(Math.random() * effects.length)]
 
+
+    const checkKey = (e) => {
+
+        console.log(e, e.keyCode)
+        if (e.keyCode === '37') {
+            previousLetter(-1)
+        } else if (e.keyCode === '39') {
+            nextLetter(1)
+        }
+    }
 
     return (
 
-        <div>
+        <div onKeyDown={(e)=>checkKey(e)} >
 
 
             <UpperLineAlph/>
@@ -23,20 +34,21 @@ const Alphabet = (props) => {
 
             <div className="wrap">
 
-                <a className="wrap-child-active-25" onClick={() => props.previousLetter(-1)}>
+                <a className="wrap-child-active-25" onClick={() => previousLetter(-1)}>
                     &#8826;
                 </a>
 
                 <div
                     style={{color: randomColor}}
-                    className="wrap-child-active-50 fadeInRight"
+                    className={`wrap-child-active-50 ${nextEffect}`}
+
                 >
-                    {props.letters[props.current].letter}
+                    {letters[current].letter}
                     <Word/>
 
                 </div>
 
-                <a className="wrap-child-active-25" onClick={() => props.nextLetter(1)}>
+                <a className="wrap-child-active-25" onClick={() => nextLetter(1)}>
                     &#8827;
                 </a>
 
@@ -51,7 +63,8 @@ const Alphabet = (props) => {
 
 const mapStateToProps = (state) => ({
     letters: state.letters,
-    current: state.current.currentIndex
+    current: state.current.currentIndex,
+    effects: state.effects.classNames
 })
 
 const mapDispatchToProps = (dispatch) => ({

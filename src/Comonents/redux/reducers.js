@@ -68,7 +68,7 @@ const initialState = {
             "Z"
         ],
         testStart: false,
-        testCounter:0
+        testCounter: 0
     },
     modals: {
         modal: false
@@ -78,10 +78,13 @@ const initialState = {
     },
     upperLine: {
         showUpperLine: true
+    },
+    effects: {
+        classNames: ["flipOutY", "flipOutX","bounceIn","bounceOut","wobble", "tada","swing", "rubberBand", "rotateIn","rotateInDownLeft","flip","zoomInUp","slideInUp"]
     }
 
 }
-
+//flipOutY, flipOutX,bounceIn,bounceOut ["bounce", "flash", "pulse", "rubberBand", "shake", "swing", "tada", "wobble", "bounceIn", "bounceInDown", "bounceInLeft", "bounceInRight", "bounceInUp", "bounceOut", "bounceOutDown", "bounceOutLeft", "bounceOutRight", "bounceOutUp", "fadeIn", "fadeInDown", "fadeInDownBig", "fadeInLeft", "fadeInLeftBig", "fadeInRight", "fadeInRightBig", "fadeInUp", "fadeInUpBig", "fadeOut", "fadeOutDown", "fadeOutDownBig", "fadeOutLeft", "fadeOutLeftBig", "fadeOutRight", "fadeOutRightBig", "fadeOutUp", "fadeOutUpBig", "animated", "flipInX", "flipInY", "flipOutX", "flipOutY", "lightSpeedIn", "lightSpeedOut", "rotateIn", "rotateInDownLeft", "rotateInDownRight", "rotateInUpLeft", "rotateInUpRight", "rotateOut", "rotateOutDownLeft", "rotateOutDownRight", "rotateOutUpLeft", "rotateOutUpRight", "hinge", "rollIn", "rollOut", "zoomIn", "zoomInDown", "zoomInLeft", "zoomInRight", "zoomInUp", "zoomOut", "zoomOutDown", "zoomOutLeft", "zoomOutRight", "zoomOutUp", "slideInDown", "slideInLeft", "slideInRight", "slideInUp", "slideOutDown", "slideOutLeft", "slideOutRight", "slideOutUp"]
 const alphabet = (state = initialState, action) => {
     switch (action.type) {
 
@@ -118,7 +121,10 @@ const alphabet = (state = initialState, action) => {
             }
             return {
                 ...state, current: {...state.current, currentIndex: newCorrectIndex},
-                stats: {...state.stats, corList: [...state.stats.corList, state.test.alphabetForTest[action.payload.value]]}
+                stats: {
+                    ...state.stats,
+                    corList: [...state.stats.corList, state.test.alphabetForTest[action.payload.value]]
+                }
 
             }
         case 'WRONG_LETTER':
@@ -150,9 +156,10 @@ const alphabet = (state = initialState, action) => {
 
             if (newNextTestIndex >= 25) {
 
-              return   {...state, test: {...state.test, testCounter: 0, testStart: false},
-                  stats: {...state.stats, showStats: true}
-              }
+                return {
+                    ...state, test: {...state.test, testCounter: 0, testStart: false},
+                    stats: {...state.stats, showStats: true}
+                }
             } else {
                 newNextTestIndex++
             }
@@ -162,7 +169,7 @@ const alphabet = (state = initialState, action) => {
             }
         case 'START_TEST':
             return {
-                ...state, test: {...state.test, testCounter: 0, testStart: true, alphabetForTest: action.payload.value },
+                ...state, test: {...state.test, testCounter: 0, testStart: true, alphabetForTest: action.payload.value},
                 stats: {
                     showStats: false,
                     correct: 0,
@@ -175,17 +182,17 @@ const alphabet = (state = initialState, action) => {
             }
         case 'TOGGLE_CASE':
             let alpCopy = [...state.test.alphabetForTest];
-            if(action.payload.activeCase === 'upper'){
-                 alpCopy = alpCopy.map(el=> el[0].toUpperCase())
-            } else if(action.payload.activeCase === 'lower'){
-                alpCopy = alpCopy.map(el=> el[0].toLowerCase())
-            } else if(action.payload.activeCase === 'both'){
-                alpCopy = alpCopy.map(el=> el[0].toUpperCase() + el[0].toLowerCase())
+            if (action.payload.activeCase === 'upper') {
+                alpCopy = alpCopy.map(el => el[0].toUpperCase())
+            } else if (action.payload.activeCase === 'lower') {
+                alpCopy = alpCopy.map(el => el[0].toLowerCase())
+            } else if (action.payload.activeCase === 'both') {
+                alpCopy = alpCopy.map(el => el[0].toUpperCase() + el[0].toLowerCase())
             } else {
                 return state
             }
             return {
-                ...state, test: {...state.test, alphabetForTest: alpCopy },
+                ...state, test: {...state.test, alphabetForTest: alpCopy},
 
             }
 

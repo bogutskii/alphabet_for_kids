@@ -19,8 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aef01aa9-c622-4849-9793-9bfb8ce043e4" name="Default Changelist" comment="-buttons case control in test">
+    <list default="true" id="aef01aa9-c622-4849-9793-9bfb8ce043e4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Alphabet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alphabet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comonents/redux/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/redux/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/alphabet-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/alphabet-style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -53,6 +57,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Comonents" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
@@ -137,7 +142,7 @@
       <workItem from="1612313041814" duration="5097000" />
       <workItem from="1612417722246" duration="4663000" />
       <workItem from="1613363701365" duration="14339000" />
-      <workItem from="1613880065100" duration="49826000" />
+      <workItem from="1613880065100" duration="57080000" />
     </task>
     <task id="LOCAL-00001" summary="done, Helping children learn the English alphabet.">
       <created>1597644735428</created>
@@ -440,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614487549624</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="slide effect">
+      <created>1614585267039</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1614585267039</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,7 +472,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="-css fix" />
     <MESSAGE value="-add TRANSCRIPTION" />
     <MESSAGE value="-add margin upper line&#10;-del dropdown" />
     <MESSAGE value="-add  vowels&#10;- upper line choice letter" />
@@ -485,7 +496,8 @@
     <MESSAGE value="- Test and Stats" />
     <MESSAGE value="control Case" />
     <MESSAGE value="-buttons case control in test" />
-    <option name="LAST_COMMIT_MESSAGE" value="-buttons case control in test" />
+    <MESSAGE value="slide effect" />
+    <option name="LAST_COMMIT_MESSAGE" value="slide effect" />
   </component>
   <component name="WindowStateProjectService">
     <state x="306" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1613880260727">
@@ -496,9 +508,10 @@
       <screen x="0" y="25" width="1680" height="963" />
     </state>
     <state x="576" y="291" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1613880163843" />
-    <state x="297" y="25" width="831" height="675" key="CommitChangelistDialog2" timestamp="1614579508657">
-      <screen x="0" y="25" width="1440" height="875" />
+    <state x="-1705" y="-1667" width="831" height="675" key="CommitChangelistDialog2" timestamp="1614585266888">
+      <screen x="-2325" y="-1667" width="3008" height="1667" />
     </state>
+    <state x="-1705" y="-1667" key="CommitChangelistDialog2/-2325.-1667.3008.1667/683.-1667.3008.1667/0.25.1440.814@-2325.-1667.3008.1667" timestamp="1614585266888" />
     <state x="297" y="25" width="831" height="675" key="CommitChangelistDialog2/-2325.-1667.3008.1667/683.-1667.3008.1667/0.25.1440.875@0.25.1440.875" timestamp="1614579508657" />
     <state x="347" y="25" key="CommitChangelistDialog2/0.-1667.3008.1605/0.25.1680.1025@0.25.1680.1025" timestamp="1614221767981" />
     <state x="347" y="25" key="CommitChangelistDialog2/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1614307872808" />
@@ -599,9 +612,10 @@
     </state>
     <state x="372" y="138" key="SettingsEditor/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1613880440628" />
     <state x="3" y="129" key="SettingsEditor/0.23.1440.828@0.23.1440.828" timestamp="1609402744470" />
-    <state x="373" y="212" key="Vcs.Push.Dialog.v2" timestamp="1614412291908">
-      <screen x="0" y="25" width="1680" height="963" />
+    <state x="-1657" y="-1343" key="Vcs.Push.Dialog.v2" timestamp="1614585270221">
+      <screen x="-2325" y="-1667" width="3008" height="1667" />
     </state>
+    <state x="-1657" y="-1343" key="Vcs.Push.Dialog.v2/-2325.-1667.3008.1667/683.-1667.3008.1667/0.25.1440.814@-2325.-1667.3008.1667" timestamp="1614585270221" />
     <state x="373" y="224" key="Vcs.Push.Dialog.v2/0.-1667.3008.1605/0.25.1680.1025@0.25.1680.1025" timestamp="1614221769778" />
     <state x="373" y="212" key="Vcs.Push.Dialog.v2/0.-1667.3008.1667/0.25.1680.963@0.25.1680.963" timestamp="1614307874693" />
     <state x="320" y="184" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1609530234892" />
