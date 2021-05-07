@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "285ad2e60e99731bfbd664d5f509e836",
+    "revision": "b642552aea71b2192bf0c2e80116f43c",
     "url": "/alphabet_for_kids/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/alphabet_for_kids/static/css/2.afc36f9d.chunk.css"
   },
   {
-    "revision": "38dd99f70402123cbc2f",
+    "revision": "1540291264f94dd44c75",
     "url": "/alphabet_for_kids/static/css/main.be9fd66a.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/alphabet_for_kids/static/js/2.abfc74cd.chunk.js"
   },
   {
-    "revision": "38dd99f70402123cbc2f",
-    "url": "/alphabet_for_kids/static/js/main.c3581d14.chunk.js"
+    "revision": "1540291264f94dd44c75",
+    "url": "/alphabet_for_kids/static/js/main.9813b09c.chunk.js"
   },
   {
     "revision": "68e8304006a2bfd1ba58",
