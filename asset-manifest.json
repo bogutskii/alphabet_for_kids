@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/alphabet_for_kids/static/css/main.744e30e1.chunk.css",
-    "main.js": "/alphabet_for_kids/static/js/main.ea1adc72.chunk.js",
-    "main.js.map": "/alphabet_for_kids/static/js/main.ea1adc72.chunk.js.map",
+    "main.css": "/alphabet_for_kids/static/css/main.be9fd66a.chunk.css",
+    "main.js": "/alphabet_for_kids/static/js/main.228268b1.chunk.js",
+    "main.js.map": "/alphabet_for_kids/static/js/main.228268b1.chunk.js.map",
     "runtime~main.js": "/alphabet_for_kids/static/js/runtime~main.c665cc28.js",
     "runtime~main.js.map": "/alphabet_for_kids/static/js/runtime~main.c665cc28.js.map",
     "static/css/2.afc36f9d.chunk.css": "/alphabet_for_kids/static/css/2.afc36f9d.chunk.css",
-    "static/js/2.ddd839a3.chunk.js": "/alphabet_for_kids/static/js/2.ddd839a3.chunk.js",
-    "static/js/2.ddd839a3.chunk.js.map": "/alphabet_for_kids/static/js/2.ddd839a3.chunk.js.map",
+    "static/js/2.abfc74cd.chunk.js": "/alphabet_for_kids/static/js/2.abfc74cd.chunk.js",
+    "static/js/2.abfc74cd.chunk.js.map": "/alphabet_for_kids/static/js/2.abfc74cd.chunk.js.map",
     "index.html": "/alphabet_for_kids/index.html",
-    "precache-manifest.fb2e2d9c47a61c2b08d2e02764c8ed24.js": "/alphabet_for_kids/precache-manifest.fb2e2d9c47a61c2b08d2e02764c8ed24.js",
+    "precache-manifest.43db6d6d653bf0828fd2750113662162.js": "/alphabet_for_kids/precache-manifest.43db6d6d653bf0828fd2750113662162.js",
     "service-worker.js": "/alphabet_for_kids/service-worker.js",
     "static/css/2.afc36f9d.chunk.css.map": "/alphabet_for_kids/static/css/2.afc36f9d.chunk.css.map",
-    "static/css/main.744e30e1.chunk.css.map": "/alphabet_for_kids/static/css/main.744e30e1.chunk.css.map"
+    "static/css/main.be9fd66a.chunk.css.map": "/alphabet_for_kids/static/css/main.be9fd66a.chunk.css.map"
   }
 }
