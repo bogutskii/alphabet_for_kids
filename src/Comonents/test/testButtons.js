@@ -11,15 +11,15 @@ const TestButtons = (props) => {
     return (
 
         <div onClick={() => nextTest()}>
-            <button className="btn btn-secondary" onClick={() => correct(testCounter)}>
+            <button className="btn btn-secondary m-1" onClick={() => correct(testCounter)}>
                 Correct
             </button>
 
-            <button className="btn btn-secondary" onClick={() => wrong(testCounter)}>
+            <button className="btn btn-secondary m-1" onClick={() => wrong(testCounter)}>
                 Wrong
             </button>
 
-            <button className="btn btn-secondary" onClick={() => skip(testCounter)}>
+            <button className="btn btn-secondary m-1" onClick={() => skip(testCounter)}>
                 Skip
             </button>
 

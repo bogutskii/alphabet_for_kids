@@ -17,8 +17,6 @@ const {state} = props
             <div className="App">
                 <Navigation/>
                 <Route exact path="/" component ={Alphabet}/>
-                {/*<Alphabet />*/}
-                {/*<Route exact path='/' ><Alphabet/> </Route>*/}
                 <Route path='/Video' render={VideoPlaylist}/>
                 <Route path='/Test' component={Test}/>
                 <Route path='/AboutPage' render={AboutPage}/>

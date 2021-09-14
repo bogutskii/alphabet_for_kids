@@ -62,7 +62,7 @@ body {
 
 .gradient-text-animation {
     animation: flow 30s ease-in-out infinite;
-    background: linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752);
+    background: linear-gradient(-60deg, #ff0076, #590fb7, #e73c7e, #13E2DA);
     background-size: 300%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -71,4 +71,10 @@ body {
 
 .center-div {
     margin: 0 auto;
+}
+.flex-tb{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 100%;
 }
