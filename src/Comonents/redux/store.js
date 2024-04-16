@@ -1,8 +1,9 @@
-import {applyMiddleware, createStore} from "redux";
-import {composeWithDevTools} from "redux-devtools-extension";
-import alphabet from './reducers'
+import { createStore } from "redux";
+import alphabet from './reducers';
+// import thunk from 'redux-thunk';
 
-const store = createStore(
-    alphabet, composeWithDevTools(applyMiddleware())
-)
+// const middleware = applyMiddleware(thunk);
+// const enhancer = compose(middleware);
+// const store = createStore(alphabet, enhancer);
+const store = createStore(alphabet);
 export default store;

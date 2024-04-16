@@ -1,6 +1,9 @@
 .App {
-    font-family: sans-serif;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 body {
@@ -77,4 +80,53 @@ body {
     flex-wrap: wrap;
     align-content: flex-start;
     height: 100%;
+}
+
+
+.btn-rose {
+    min-width: 50px;
+    height: 30px;
+    color: #fff;
+    padding: 2px 3px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #ff0a78;
+    color: #ff0a78;
+    text-decoration: none;
+}
+.btn-rose:hover {
+    color: #fff;
+}
+.btn-rose:hover:after {
+    width: 100%;
+}
+.btn-rose:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #ff0a78;
+}
+.navigation {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

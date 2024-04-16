@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import "./alphabet-style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import UpperLineAlph from "./Comonents/upperLineAlph"
@@ -13,10 +13,8 @@ const Alphabet = (props) => {
     let randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
     let nextEffect = effects[Math.floor(Math.random() * effects.length)]
 
-
     const checkKey = (e) => {
 
-        console.log(e, e.keyCode)
         if (e.keyCode === '37') {
             previousLetter(-1)
         } else if (e.keyCode === '39') {
@@ -26,35 +24,23 @@ const Alphabet = (props) => {
 
     return (
 
-        <div onKeyDown={(e)=>checkKey(e)} >
-
-
+        <div className='content' onKeyDown={(e)=>checkKey(e)} >
             <UpperLineAlph/>
-
-
             <div className="wrap">
-
                 <a className="wrap-child-active-25" onClick={() => previousLetter(-1)}>
                     &#8826;
                 </a>
-
                 <div
                     style={{color: randomColor}}
                     className={`wrap-child-active-50 ${nextEffect}`}
-
                 >
                     {letters[current].letter}
                     <Word/>
-
                 </div>
-
                 <a className="wrap-child-active-25" onClick={() => nextLetter(1)}>
                     &#8827;
                 </a>
-
             </div>
-
-
             <h4>{props.current + 1} / 26 </h4>
         </div>
     );

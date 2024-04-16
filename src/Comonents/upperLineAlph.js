@@ -5,17 +5,16 @@ import {connect} from "react-redux";
 
 
 const UpperLineAlph = (props) => {
-
     return <div className='center-div'>
         <div className="all-alph">
             {props.letters.map((el, i) =>
                 i === props.current ? (
                     <span className={`selected ${[0, 4, 8, 14, 20, 24].includes(i) ? 'vowels' : ''}`} key={i}>
-                      {el.letter}
+                        {el.letter}
                     </span>
                 ) : (
                     <span onClick={() => props.changeLetterOnClicked(i)} className="letterCircle" key={i}>
-                      {el.letter}
+                        {el.letter}
                     </span>
                 )
             )}
