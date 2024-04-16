@@ -12,10 +12,10 @@ body {
 }
 
 .accordion-wrapper {
-& + * {
+    & + * {
 
-      margin-top: 0.5em;
-  }
+        margin-top: 0.5em;
+    }
 }
 
 .accordion-item {
@@ -42,27 +42,27 @@ body {
     justify-content: space-between;
     align-items: center;
 
-&::after {
-     content: "";
-     width: 0;
-     height: 0;
-     border-left: 5px solid transparent;
-     border-right: 5px solid transparent;
-     border-top: 5px solid currentColor;
- }
+    &::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid currentColor;
+    }
 
-&:hover,
-&.open {
-     color: #ffffff;
- }
+    &:hover,
+    &.open {
+        color: #ffffff;
+    }
 
-&.open {
-&::after {
-     content: "";
-     border-top: 0;
-     border-bottom: 5px solid;
- }
-}
+    &.open {
+        &::after {
+            content: "";
+            border-top: 0;
+            border-bottom: 5px solid;
+        }
+    }
 }
 
 .accordion-content {

@@ -1,35 +1,52 @@
-
-
 .all-alph {
-    display: flex;
-    flex-flow: row wrap;
-    align-content: space-between;
-    justify-content: center;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    gap: 4px;
+    padding: 20px;
+    max-width: 100%;
 }
 
 .letterCircle {
-    cursor: pointer;
-    border-radius: 25%;
-  margin: 0 2px;
-    padding: 5px;
-    background: #fff;
-    border: 2px solid #666;
-    color: #666;
-    text-align: center;
-    font: 2vw Arial, sans-serif;
+    position: relative;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    aspect-ratio: 3 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(2vw + 1vh);
+    padding: 2px 8px;
+    border-radius: 5px;
 }
 
-.selected {
-    cursor: default;
-    border-radius: 25%;
-    padding: 5px;
-    background: rgb(159, 255, 156);
-    border: 2px solid rgb(152, 236, 15);
-    color: rgb(19, 58, 201);
-    text-align: center;
-    font: 2vw Arial, sans-serif;
+.letterCircle.Y, .letterCircle.Z {
+    grid-column: span 2;
 }
-.vowels{
-    color: #ff0009;
+
+.letterCircle > .alph {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+.letterCircle.selected {
+    color: blue;
+    background-color: yellow;
+    border: 1px solid #000000;
+
+}
+
+.letterCircle.vowels {
+    color: red;
+}
+
+.letterCircle.vowels.selected {
+    color: red;
 }
