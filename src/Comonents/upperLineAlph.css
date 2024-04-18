@@ -8,9 +8,9 @@
 
 .letterCircle {
     position: relative;
-    background-color: #f0f0f0;
+    background-color: #fcfbbd;
     border: 1px solid #ccc;
-    aspect-ratio: 3 / 1;
+    aspect-ratio: 10 / 1;
     display: flex;
     align-items: center;
     justify-content: center;

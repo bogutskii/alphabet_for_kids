@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,8 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aef01aa9-c622-4849-9793-9bfb8ce043e4" name="Default Changelist" comment="">
+    <list default="true" id="aef01aa9-c622-4849-9793-9bfb8ce043e4" name="Default Changelist" comment="refactor, re-design, add actions">
+      <change afterPath="$PROJECT_DIR$/src/Comonents/test/SequenceTest.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Comonents/test/SequenceTest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comonents/NavBar/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/NavBar/Navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Comonents/upperLineAlph.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Comonents/upperLineAlph.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +47,26 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "bogutskii"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="869ea6a5-fef2-4ba6-b276-eeb929038bfd" />
+        <option name="url" value="https://github.com/bogutskii/alphabet_for_kids.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
   <component name="ProjectId" id="1gDL3wLIESWK1D0xMaIaQvRY2rz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -47,32 +75,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Comonents" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Users/admin/projects/alphabet_for_kids",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.start.executor": "Run",
+    "npm.test.executor": "Run",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Comonents/test" />
-      <recent name="$PROJECT_DIR$/src/Comonents" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/.idea" />
-      <recent name="$PROJECT_DIR$/public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Comonents" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Comonents" />
+      <recent name="$PROJECT_DIR$/src/Comonents/test" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/.idea" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
   </component>
-  <component name="RunManager" selected="npm.test">
+  <component name="RunManager" selected="npm.start">
     <configuration name="App.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/App.js" working-dir="$PROJECT_DIR$/src">
       <method v="2" />
     </configuration>
@@ -118,13 +152,14 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.test" />
         <item itemvalue="npm.predeploy" />
-        <item itemvalue="npm.start" />
         <item itemvalue="Node.js.App.js" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -163,6 +198,7 @@
       <workItem from="1631581850431" duration="3279000" />
       <workItem from="1631597323620" duration="200000" />
       <workItem from="1631597598084" duration="984000" />
+      <workItem from="1713243855263" duration="21028000" />
     </task>
     <task id="LOCAL-00001" summary="done, Helping children learn the English alphabet.">
       <created>1597644735428</created>
@@ -486,11 +522,35 @@
       <option name="project" value="LOCAL" />
       <updated>1631583395416</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00048" summary="refactor, re-design, add actions">
+      <option name="closed" value="true" />
+      <created>1713293314985</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1713293314985</updated>
+    </task>
+    <task id="LOCAL-00049" summary="refactor, re-design, add actions">
+      <option name="closed" value="true" />
+      <created>1713293870771</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1713293870771</updated>
+    </task>
+    <task id="LOCAL-00050" summary="refactor, re-design, add actions">
+      <option name="closed" value="true" />
+      <created>1713294169214</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1713294169215</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -502,12 +562,9 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="-add  vowels&#10;- upper line choice letter" />
-    <MESSAGE value="-add tamplate for VideoPlaylist&#10; ready for routing" />
     <MESSAGE value="--install routing-dom&#10;--Navigation" />
     <MESSAGE value="-fix" />
     <MESSAGE value="-modal edit" />
@@ -531,21 +588,8 @@
     <MESSAGE value="slide effect" />
     <MESSAGE value="-css effects" />
     <MESSAGE value="fix margin button" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix margin button" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="1634" y="-976" key="CommitChangelistDialog2" timestamp="1631583394062">
-      <screen x="804" y="-1415" width="2560" height="1415" />
-    </state>
-    <state x="1634" y="-976" key="CommitChangelistDialog2/804.-1415.2560.1415/-1756.-1415.2560.1415/0.25.1440.795@804.-1415.2560.1415" timestamp="1631583394062" />
-    <state x="1827" y="-1008" key="SettingsEditor" timestamp="1631605241946">
-      <screen x="804" y="-1415" width="2560" height="1415" />
-    </state>
-    <state x="1827" y="-1008" key="SettingsEditor/-1756.-1415.2560.1415/804.-1415.2560.1415/0.25.1440.795@804.-1415.2560.1415" timestamp="1631605241946" />
-    <state x="1827" y="-1031" key="SettingsEditor/804.-1415.2560.1335/-1756.-1415.2560.1415/0.25.1440.875@804.-1415.2560.1335" timestamp="1631590736794" />
-    <state x="2005" y="-877" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1631590553600">
-      <screen x="804" y="-1415" width="2560" height="1335" />
-    </state>
-    <state x="2005" y="-877" key="git4idea.remote.GitConfigureRemotesDialog/804.-1415.2560.1335/-1756.-1415.2560.1415/0.25.1440.875@804.-1415.2560.1335" timestamp="1631590553600" />
+    <MESSAGE value="update pkg&#10;fix issue&#10;change design" />
+    <MESSAGE value="refactor, re-design, add actions" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor, re-design, add actions" />
   </component>
 </project>
