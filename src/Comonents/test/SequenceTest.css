@@ -62,7 +62,7 @@
     animation: fadeInOut 1s forwards;
 }
 .sequence-game-feedback.correct {
-    color: #1dfd1d;
+    color: rgba(18, 194, 18, 0.91);
 }
 .sequence-game-feedback.incorrect {
     color: #f58181;
@@ -75,4 +75,5 @@
 
 .sequence-game-new-question {
     margin-top: 20px;
+    z-index: 1;
 }
