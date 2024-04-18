@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from 'react';
-import {connect} from 'react-redux';
-import './SequenceTest.css'
+import React, { useState, useEffect } from 'react';
+import { connect } from 'react-redux';
+import './SequenceTest.css';
 
 const generateSequenceQuestion = (letters) => {
   const alphabet = letters.map(letter => letter.letter);
@@ -22,14 +22,20 @@ const generateSequenceQuestion = (letters) => {
 
   return {
     question: sequence.join(' '),
+    formattedQuestion: sequence.map((letter, index) => ({
+      letter,
+      isMissing: index + start === missingIndex
+    })),
     answers,
-    correctAnswer
+    correctAnswer,
+    missingIndex
   };
 };
 
-const SequenceTest = ({alphabet}) => {
+const SequenceTest = ({ alphabet }) => {
   const [testState, setTestState] = useState({
     currentQuestion: '',
+    formattedQuestion: [],
     answerOptions: [],
     correctAnswer: '',
     answered: false,
@@ -38,69 +44,75 @@ const SequenceTest = ({alphabet}) => {
   });
 
   useEffect(() => {
-    startTest();
-  }, []);
+    if (alphabet.length > 0) {
+      startTest();
+    }
+  }, [alphabet]);
 
   const startTest = () => {
     const question = generateSequenceQuestion(alphabet);
     setTestState({
       ...testState,
       currentQuestion: question.question,
+      formattedQuestion: question.formattedQuestion,
       answerOptions: question.answers,
       correctAnswer: question.correctAnswer,
       answered: false,
+      userAnswer: null,
       answerFeedback: ''
     });
   };
 
   const handleAnswer = (answer) => {
-    if (answer === testState.correctAnswer) {
-      setTestState({
-        ...testState,
-        answered: true,
-        correctCount: testState.correctCount + 1,
-        answerFeedback: 'correct'
-      });
-    } else {
-      setTestState({
-        ...testState,
-        answered: true,
-        answerFeedback: 'incorrect'
-      });
-    }
+    const isCorrect = answer === testState.correctAnswer;
+    const realAnswer = testState.formattedQuestion.map(item => ({
+      ...item,
+      letter: item.isMissing ? answer : item.letter
+    }));
+    setTestState({
+      ...testState,
+      formattedQuestion: realAnswer,
+      answered: true,
+      userAnswer: answer,
+      answerFeedback: isCorrect ? 'correct' : 'incorrect'
+    });
   };
-  return (
-    <div className="container_game">
-      <h1>Sequence Letters</h1>
-      <div>
-        <p className="question_game">{testState.currentQuestion}</p>
-        <div>
-          {testState.answerOptions.map((option, index) => (
-            <button key={index}
-                    className={`button_game ${testState.answered ? (option === testState.correctAnswer ? 'correct' : 'incorrect') : ''}`}
-                    onClick={() => handleAnswer(option)}
-                    disabled={testState.answered}>
-              {option}
-            </button>
-          ))}
-        </div>
-        <div>
-          {testState.answered && (
-            <div className={testState.answerFeedback === 'correct' ? 'feedback correct' : 'feedback incorrect'}>
-              {testState.answerFeedback === 'correct' ? 'Correct!' : 'Incorrect!'}
-            </div>
-          )}
 
+  return (
+    <div className="sequence-game-container">
+      <h1 className="sequence-game-title">Sequence Letters</h1>
+      <p className="sequence-game-question">
+        {testState.formattedQuestion.map((item, index) => (
+          <span key={index} style={{
+            color: testState.answered && item.isMissing ?
+              (testState.answerFeedback === 'correct' ? 'green' : 'red') : 'black'
+          }}>
+            {item.letter}
+          </span>
+        ))}
+      </p>
+      <div className='sequence-game-answers'>
+        {testState.answerOptions.map((option, index) => (
+          <button key={index}
+                  className={`sequence-game-button ${testState.answered ? (option === testState.correctAnswer ? 'correct' : 'incorrect') : ''}`}
+                  onClick={() => handleAnswer(option)}
+                  disabled={testState.answered}>
+            {option}
+          </button>
+        ))}
+      </div>
+      {testState.answered && (
+        <div className={`sequence-game-feedback ${testState.answerFeedback}`}>
+          {testState.answerFeedback === 'correct' ? 'Correct!' : 'Incorrect!'}
         </div>
-        <div className='wrap_game'>
-          <button className='button_game' onClick={startTest}>New Question</button>
-        </div>
+      )}
+      <div className='sequence-game-new-question'>
+        <button className='sequence-game-button' onClick={startTest}>New Question</button>
       </div>
     </div>
-  )
-    ;
+  );
+};
 
-}
 const mapStateToProps = (state) => ({
   alphabet: state.letters
 });
