@@ -134,8 +134,8 @@ const alphabet = (state = initialState, action) => {
         stats: {showStats: false, correct: 0, incorrect: 0, skip: 0, corList: [], incList: [], pasList: []}
       };
     case ActionTypes.TOGGLE_CASE:
-      const alpCopy = state.test.alphabetForTest.map(el => action.payload.activeCase === 'upper' ? el.toUpperCase() :
-        action.payload.activeCase === 'lower' ? el.toLowerCase() : el.toUpperCase() + el.toLowerCase()
+      const alpCopy = state.test.alphabetForTest.map(el => action.payload.activeCase === 'upper' ? el[0].toUpperCase() :
+        action.payload.activeCase === 'lower' ? el[0].toLowerCase() : el[0].toUpperCase() + el[0].toLowerCase()
       );
       return {
         ...state, test: {...state.test, alphabetForTest: alpCopy}

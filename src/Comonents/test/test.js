@@ -12,7 +12,7 @@ const Test = (props) => {
     let randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
     return (
         <div>
-            <button onClick={() => startTest([...test.alphabetForTest].sort(() => Math.random() - 0.5))}>
+            <button className="test-game-button" onClick={() => startTest([...test.alphabetForTest].sort(() => Math.random() - 0.5))}>
                 Start test
             </button>
             {test.testStart &&
