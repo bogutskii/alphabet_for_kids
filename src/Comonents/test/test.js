@@ -8,49 +8,48 @@ import ControlCase from "../ControlCase";
 
 
 const Test = (props) => {
-    const {stats, test, nextTest, startTest} = props;
-    let randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-    return (
-        <div>
-            <button className="test-game-button" onClick={() => startTest([...test.alphabetForTest].sort(() => Math.random() - 0.5))}>
-                Start test
-            </button>
-            {test.testStart &&
-            <div
-                style={{color: randomColor}}
-                className="wrap-child-active-50"
-            >
-                <ul>
-                    {test.alphabetForTest.map((letter, i) => i === test.testCounter ? <li>{letter}</li> : <></>)}
-                </ul>
-            </div>
-            }
-            <ControlCase/>
-            {test.testStart && <TestButtons/>}
-            {test.testStart && <h3>Left: {26 - test.testCounter}</h3>}
-            {stats.showStats && <Stats/>}
+  const {stats, test, startTest} = props;
+  let randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+  return (
+    <div className="test-game-container">
+      <button className="test-game-button"
+              onClick={() => startTest([...test.alphabetForTest].sort(() => Math.random() - 0.5))}>
+        {test.testStart ? 'Restart test' : 'Start test'}
+      </button>
+      {test.testStart &&
+        <div className="wrap-child-active-50" style={{color: randomColor}}>
+          <ul className="test-letters-list">
+            {test.alphabetForTest.map((letter, i) => i === test.testCounter ? <li key={i}>{letter}</li> : null)}
+          </ul>
         </div>
-    )
+      }
+      <ControlCase/>
+      {test.testStart && <TestButtons/>}
+      {test.testStart && <h3 className="test-counter">Left: {26 - test.testCounter}</h3>}
+      {stats.showStats && <Stats/>}
+    </div>
+  );
+
 };
 
 const mapStateToProps = (state) => ({
-    stats: state.stats,
-    test: state.test
+  stats: state.stats,
+  test: state.test
 })
 
 const mapDispatchToProps = (dispatch) => ({
-    nextTest: (value) => dispatch({
-        type: 'NEXT_TEXT_COUNTER',
-        payload: {
-            value: value
-        }
-    }),
-    startTest: (value) => dispatch({
-        type: 'START_TEST',
-        payload: {
-            value: value
-        }
-    }),
+  nextTest: (value) => dispatch({
+    type: 'NEXT_TEXT_COUNTER',
+    payload: {
+      value: value
+    }
+  }),
+  startTest: (value) => dispatch({
+    type: 'START_TEST',
+    payload: {
+      value: value
+    }
+  }),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Test);

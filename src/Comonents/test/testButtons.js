@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles.css";
+import '../../alphabet-style.css'
 import {connect} from "react-redux";
 
 
@@ -11,15 +11,15 @@ const TestButtons = (props) => {
     return (
 
         <div onClick={() => nextTest()}>
-            <button className="btn btn-secondary m-1" onClick={() => correct(testCounter)}>
+            <button className="test-game-button correct_test m-10" onClick={() => correct(testCounter)}>
                 Correct
             </button>
 
-            <button className="btn btn-secondary m-1" onClick={() => wrong(testCounter)}>
+            <button className="test-game-button wrong m-10" onClick={() => wrong(testCounter)}>
                 Wrong
             </button>
 
-            <button className="btn btn-secondary m-1" onClick={() => skip(testCounter)}>
+            <button className="test-game-button skip m-10" onClick={() => skip(testCounter)}>
                 Skip
             </button>
 
