@@ -8,18 +8,15 @@ body {
 .wrapper {
     width: 600px;
     margin: 0 auto;
-
 }
 
 .accordion-wrapper {
     & + * {
-
         margin-top: 0.5em;
     }
 }
 
 .accordion-item {
-
     overflow: hidden;
     transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
     height: auto;
@@ -53,7 +50,7 @@ body {
 
     &:hover,
     &.open {
-        color: #ffffff;
+        color: #5893a9;
     }
 
     &.open {
@@ -68,4 +65,18 @@ body {
 .accordion-content {
     padding: 1em 1.5em;
     color: white;
+}
+
+.stats-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stats-title {
+    color: black;
+}
+
+.control-case-btn{
+    margin: 10px;
 }

@@ -2,37 +2,21 @@ import React from "react";
 import '../../alphabet-style.css'
 import {connect} from "react-redux";
 
-
 const TestButtons = (props) => {
-
     const {nextTest, correct, wrong, skip, testCounter} = props
-
-
     return (
-
-        <div onClick={() => nextTest()}>
-            <button className="test-game-button correct_test m-10" onClick={() => correct(testCounter)}>
-                Correct
-            </button>
-
-            <button className="test-game-button wrong m-10" onClick={() => wrong(testCounter)}>
-                Wrong
-            </button>
-
-            <button className="test-game-button skip m-10" onClick={() => skip(testCounter)}>
-                Skip
-            </button>
-
-        </div>
+      <div onClick={() => nextTest()}>
+        <button className="test-game-button correct_test m-10" onClick={() => correct(testCounter)}>Correct</button>
+        <button className="test-game-button wrong m-10" onClick={() => wrong(testCounter)}>Wrong</button>
+        <button className="test-game-button skip m-10" onClick={() => skip(testCounter)}>Skip</button>
+      </div>
     );
 }
-
 
 const mapStateToProps = (state) => ({
     currentIndex: state.current.currentIndex,
     stats: state.stats,
     testCounter: state.test.testCounter
-
 })
 
 const mapDispatchToProps = (dispatch) => ({

@@ -21,8 +21,7 @@ const ControlCase = (props) => {
     setCSelected([...cSelected]);
     toggleCase(selected)
   }
-  return <div>
-    <h5>Case Options</h5>
+  return <div className="control-case-btn">
     <ButtonGroup>
       <Button color="warning" onClick={() => onCheckboxBtnClick("upper")}
               active={rSelected === 'upper'}>A</Button>
@@ -30,8 +29,6 @@ const ControlCase = (props) => {
               active={rSelected === 'lower'}>a</Button>
       <Button color="warning" onClick={() => onCheckboxBtnClick('both')} active={rSelected === 'both'}>Aa</Button>
     </ButtonGroup>
-    <p>{rSelected}</p>
-
   </div>
 
 }

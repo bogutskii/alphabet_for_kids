@@ -5,7 +5,7 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Navigation from './Comonents/NavBar/Navigation';
 import VideoPlaylist from './Comonents/VideoPlaylist';
 import AboutPage from './Comonents/AboutPage';
-import Test from "./Comonents/test/test";
+import Test from "./Comonents/test/Test";
 import SequenceTest from "./Comonents/test/SequenceTest";
 
 function App() {

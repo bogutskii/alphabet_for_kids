@@ -30,7 +30,7 @@ const initialState = {
     {letter: "Z", words: "Zebra", transaction: "[zed]"}
   ],
   stats: {
-    showStats: false,
+    showStats: true,
     correct: 0,
     incorrect: 0,
     skip: 0,
