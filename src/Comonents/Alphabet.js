@@ -6,7 +6,7 @@ import Alpha_line from "./Alpha_line"
 import Word from "./InitialLetterWord";
 import {connect} from "react-redux";
 
-const Alphabet = ({letters,currentLanguage, current, effects, previousLetter, nextLetter}) => {
+const Alphabet = ({letters, currentLanguage, currentIndex, currentCase, effects, previousLetter, nextLetter}) => {
   let randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
   let nextEffect = effects[Math.floor(Math.random() * effects.length)];
 
@@ -16,6 +16,14 @@ const Alphabet = ({letters,currentLanguage, current, effects, previousLetter, ne
     } else if (e.keyCode === 39) {
       nextLetter(1);
     }
+  }
+  let currentLetter = letters[currentLanguage][currentIndex].letter;
+  if(currentCase === 'upper'){
+    currentLetter = currentLetter[0].toUpperCase()
+  }else if(currentCase === 'lower'){
+    currentLetter = currentLetter[0].toLowerCase()
+  }else if(currentCase === 'both'){
+    currentLetter = currentLetter[0].toUpperCase() + currentLetter[0].toLowerCase()
   }
 
   return (
@@ -29,7 +37,7 @@ const Alphabet = ({letters,currentLanguage, current, effects, previousLetter, ne
           style={{color: randomColor}}
           className={`wrap-child-active-50 ${nextEffect}`}
         >
-          {letters[currentLanguage][current].letter}
+          {currentLetter}
           <Word/>
         </div>
         <a className="wrap-child-active-25" onClick={() => nextLetter(1)} href="#" role="button">
@@ -44,8 +52,9 @@ const Alphabet = ({letters,currentLanguage, current, effects, previousLetter, ne
 const mapStateToProps = (state) => ({
   letters: state.alphabets,
   currentLanguage: state.currentLanguage,
-  current: state.current.currentIndex,
-  effects: state.effects.classNames
+  currentIndex: state.current.currentIndex,
+  effects: state.effects.classNames,
+  currentCase: state.currentCase
 });
 
 const mapDispatchToProps = (dispatch) => ({

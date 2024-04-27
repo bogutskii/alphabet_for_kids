@@ -1,39 +1,23 @@
 import React, {useState} from 'react';
 import {connect} from "react-redux";
 import {Button, ButtonGroup} from 'reactstrap'
-
-const ControlCase = (props) => {
-  const {toggleCase} = props
-  const [cSelected, setCSelected] = useState(["upper"]);
-  const [rSelected, setRSelected] = useState("upper");
-
-
-  const onCheckboxBtnClick = (selected) => {
-    setCSelected([])
-    setRSelected(null)
-
-    const index = cSelected.indexOf(selected);
-    if (index < 0) {
-      cSelected.push(selected);
-    } else {
-      cSelected.splice(index, 1);
-    }
-    setCSelected([...cSelected]);
-    toggleCase(selected)
-  }
+import {toggleCase} from "./redux/actions";
+const ControlCase =({toggleCase, activeCase})=>{
   return <div className="control-case-btn">
     <ButtonGroup>
-      <Button color="warning" onClick={() => onCheckboxBtnClick("upper")}
-              active={rSelected === 'upper'}>A</Button>
-      <Button color="warning" onClick={() => onCheckboxBtnClick('lower')}
-              active={rSelected === 'lower'}>a</Button>
-      <Button color="warning" onClick={() => onCheckboxBtnClick('both')} active={rSelected === 'both'}>Aa</Button>
+      <Button color="warning" onClick={() => toggleCase("upper")}
+              active={activeCase === 'upper'}>A</Button>
+      <Button color="warning" onClick={() => toggleCase('lower')}
+              active={activeCase === 'lower'}>a</Button>
+      <Button color="warning" onClick={() => toggleCase('both')} active={activeCase === 'both'}>Aa</Button>
     </ButtonGroup>
   </div>
 
 }
 
-const mapStateToProps = () => ({})
+const mapStateToProps = (state) => ({
+  activeCase: state.currentCase
+})
 
 const mapDispatchToProps = (dispatch) => ({
 

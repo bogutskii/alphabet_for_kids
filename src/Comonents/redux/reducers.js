@@ -5,6 +5,7 @@ import ukrainianAlphabet from '../../languages/ukrainian.json';
 
 const initialState = {
   currentLanguage: 'english',
+  currentCase: 'upper',
   alphabets: {
     english: englishAlphabet,
     russian: russianAlphabet,
@@ -20,34 +21,6 @@ const initialState = {
     pasList: []
   },
   test: {
-    alphabetForTest: [
-      "A",
-      "B",
-      "C",
-      "D",
-      "E",
-      "F",
-      "G",
-      "H",
-      "I",
-      "J",
-      "K",
-      "L",
-      "M",
-      "N",
-      "O",
-      "P",
-      "Q",
-      "R",
-      "S",
-      "T",
-      "U",
-      "V",
-      "W",
-      "X",
-      "Y",
-      "Z"
-    ],
     testStart: false,
     testCounter: 0
   },
@@ -115,11 +88,9 @@ const alphabet = (state = initialState, action) => {
         stats: {showStats: false, correct: 0, incorrect: 0, skip: 0, corList: [], incList: [], pasList: []}
       };
     case ActionTypes.TOGGLE_CASE:
-      const alpCopy = state.test.alphabetForTest.map(el => action.payload.activeCase === 'upper' ? el[0].toUpperCase() :
-        action.payload.activeCase === 'lower' ? el[0].toLowerCase() : el[0].toUpperCase() + el[0].toLowerCase()
-      );
       return {
-        ...state, test: {...state.test, alphabetForTest: alpCopy}
+        ...state,
+        currentCase: action.payload.activeCase,
       };
     default:
       return state;

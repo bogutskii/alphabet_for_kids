@@ -14,7 +14,7 @@ const Test = (props) => {
     <div className="test-game-container">
       <ControlCase/>
       <button className="test-game-button"
-              onClick={() => startTest([...test.alphabetForTest].sort(() => Math.random() - 0.5))}>
+              onClick={() => startTest([...alphabets[currentLanguage]].sort(() => Math.random() - 0.5))}>
         {test.testStart ? 'Restart test' : 'Start test'}
       </button>
       {test.testStart &&
