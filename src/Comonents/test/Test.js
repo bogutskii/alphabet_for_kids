@@ -8,7 +8,7 @@ import ControlCase from "../ControlCase";
 
 
 const Test = (props) => {
-  const {stats, test, startTest} = props;
+  const { currentLanguage, alphabets, test, startTest} = props;
   let randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
   return (
     <div className="test-game-container">
@@ -20,7 +20,7 @@ const Test = (props) => {
       {test.testStart &&
         <div className="wrap-child-active-50" style={{color: randomColor}}>
           <ul className="test-letters-list">
-            {test.alphabetForTest.map((letter, i) => i === test.testCounter ? <li key={i}>{letter}</li> : null)}
+            {alphabets[currentLanguage].map((obj, i) => i === test.testCounter ? <li key={i}>{obj.letter}</li> : null)}
           </ul>
         </div>
       }
@@ -38,8 +38,12 @@ const Test = (props) => {
 
 const mapStateToProps = (state) => ({
   stats: state.stats,
-  test: state.test
-})
+  test: state.test,
+  alphabets: state.alphabets,
+  currentLanguage: state.currentLanguage,
+
+
+  })
 
 const mapDispatchToProps = (dispatch) => ({
   nextTest: (value) => dispatch({

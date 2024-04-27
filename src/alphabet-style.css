@@ -1,10 +1,9 @@
 .wrap {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     align-content: center;
-    align-items: stretch;
     flex-flow: row nowrap;
-    height: 100%;
+    height: 70vh;
     width: 100%;
     justify-content: space-between;
 }
@@ -16,11 +15,18 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    font-size: 24vw;
+    font-size: 50vh;
     text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff,
     1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 
+
+@media (max-width: 660px) {
+    .wrap-child-active-50 {
+        font-size: 30vh;
+    }
+
+}
 .wrap-child-active-25 {
     font-size: 20vw;
     opacity: 0.5;

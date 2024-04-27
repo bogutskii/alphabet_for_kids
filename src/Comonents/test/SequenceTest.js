@@ -114,7 +114,7 @@ const SequenceTest = ({ alphabet }) => {
 };
 
 const mapStateToProps = (state) => ({
-  alphabet: state.letters
+  alphabet: state.alphabets
 });
 
 export default connect(mapStateToProps)(SequenceTest);

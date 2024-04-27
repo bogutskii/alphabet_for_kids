@@ -2,12 +2,26 @@
     display: grid;
     grid-template-columns: repeat(13, 1fr);
     gap: 4px;
-    padding: 20px;
+    padding: 10px;
     max-width: 100%;
+}
+
+@media (max-width: 860px) {
+    .all-alph {
+        grid-template-columns: repeat(10, 0fr);
+    }
+}
+
+@media (max-width: 660px) {
+    .all-alph {
+        grid-template-columns: repeat(6, 0fr);
+    }
+
 }
 
 .letterCircle {
     position: relative;
+    cursor: pointer;
     background-color: #fcfbbd;
     border: 1px solid #ccc;
     aspect-ratio: 10 / 1;

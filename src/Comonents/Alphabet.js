@@ -6,7 +6,7 @@ import Alpha_line from "./Alpha_line"
 import Word from "./InitialLetterWord";
 import {connect} from "react-redux";
 
-const Alphabet = ({letters, current, effects, previousLetter, nextLetter}) => {
+const Alphabet = ({letters,currentLanguage, current, effects, previousLetter, nextLetter}) => {
   let randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
   let nextEffect = effects[Math.floor(Math.random() * effects.length)];
 
@@ -29,20 +29,21 @@ const Alphabet = ({letters, current, effects, previousLetter, nextLetter}) => {
           style={{color: randomColor}}
           className={`wrap-child-active-50 ${nextEffect}`}
         >
-          {letters[current].letter}
+          {letters[currentLanguage][current].letter}
           <Word/>
         </div>
         <a className="wrap-child-active-25" onClick={() => nextLetter(1)} href="#" role="button">
           &#8827;
         </a>
       </div>
-      <h4>{current + 1} / 26</h4>
+      {/*<h4>{current + 1} / 26</h4>*/}
     </div>
   );
 };
 
 const mapStateToProps = (state) => ({
-  letters: state.letters,
+  letters: state.alphabets,
+  currentLanguage: state.currentLanguage,
   current: state.current.currentIndex,
   effects: state.effects.classNames
 });

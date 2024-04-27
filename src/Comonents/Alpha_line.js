@@ -2,16 +2,16 @@ import React from "react";
 import "./upperLineAlph.css";
 import {connect} from "react-redux";
 
-const Alpha_line = ({letters, current, changeLetterOnClicked}) => {
+const Alpha_line = ({letters,currentLanguage, current, changeLetterOnClicked}) => {
   const vowelsIndices = [0, 4, 8, 14, 20, 24];
   return (
     <div className='center-div'>
       <div className="all-alph">
-        {letters.map((el, i) => (
+        {letters[currentLanguage].map((el, i) => (
           <span
             className={`letterCircle ${i === current ? 'selected' : ''} ${vowelsIndices.includes(i) ? 'vowels' : ''}`}
             key={i}
-            onClick={i !== current ? () => changeLetterOnClicked(i) : undefined}
+            onClick={i !== current ? () => changeLetterOnClicked(i): null}
           >
             {el.letter}
           </span>
@@ -22,8 +22,9 @@ const Alpha_line = ({letters, current, changeLetterOnClicked}) => {
 };
 
 const mapStateToProps = (state) => ({
-  letters: state.letters,
-  current: state.current.currentIndex
+  letters: state.alphabets,
+  current: state.current.currentIndex,
+  currentLanguage: state.currentLanguage,
 })
 
 const mapDispatchToProps = (dispatch) => ({
