@@ -9,7 +9,7 @@ const Alpha_line = ({letters,currentLanguage, current, changeLetterOnClicked}) =
       <div className="all-alph">
         {letters[currentLanguage].map((el, i) => (
           <span
-            className={`letterCircle ${i === current ? 'selected' : ''} ${vowelsIndices.includes(i) ? 'vowels' : ''}`}
+            className={`letterSquare ${i === current ? 'selected' : ''} ${vowelsIndices.includes(i) ? 'vowels' : ''}`}
             key={i}
             onClick={i !== current ? () => changeLetterOnClicked(i): null}
           >

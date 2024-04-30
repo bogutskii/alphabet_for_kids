@@ -19,25 +19,26 @@
 
 }
 
-.letterCircle {
+.letterSquare {
     position: relative;
     cursor: pointer;
     background-color: #fcfbbd;
     border: 1px solid #ccc;
-    aspect-ratio: 10 / 1;
+    aspect-ratio: 1 / 1; /* Задаём пропорцию квадрата */
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: calc(2vw + 1vh);
+    font-size: calc(2vw + 1vh); /* Адаптивный размер шрифта */
     padding: 2px 8px;
     border-radius: 5px;
+    width: 100%;
 }
 
-.letterCircle.Y, .letterCircle.Z {
+.letterSquare.Y, .letterSquare.Z {
     grid-column: span 2;
 }
 
-.letterCircle > .alph {
+.letterSquare > .alph {
     position: absolute;
     top: 0;
     left: 0;
@@ -50,17 +51,17 @@
 }
 
 
-.letterCircle.selected {
+.letterSquare.selected {
     color: blue;
     background-color: yellow;
     border: 1px solid #000000;
 
 }
 
-.letterCircle.vowels {
+.letterSquare.vowels {
     color: red;
 }
 
-.letterCircle.vowels.selected {
+.letterSquare.vowels.selected {
     color: red;
 }
