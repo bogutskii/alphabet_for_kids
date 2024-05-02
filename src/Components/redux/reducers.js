@@ -6,6 +6,7 @@ import ukrainianAlphabet from '../../languages/ukrainian.json';
 const initialState = {
   currentLanguage: 'english',
   currentCase: 'upper',
+  currentIndex: 0,
   alphabets: {
     english: englishAlphabet,
     russian: russianAlphabet,
@@ -27,9 +28,6 @@ const initialState = {
   modals: {
     modal: false
   },
-  current: {
-    currentIndex: 0
-  },
   upperLine: {
     showUpperLine: true
   },
@@ -43,38 +41,38 @@ const alphabet = (state = initialState, action) => {
   switch (action.type) {
     case ActionTypes.CHANGE_LETTER_ON_CLICKED:
       return {
-        ...state, current: {...state.current, currentIndex: action.payload.index}
+        ...state,  currentIndex: action.payload.index
       };
     case ActionTypes.PREVIOUS_LETTER:
-      const newIndex = state.current.currentIndex === 0 ? 25 : state.current.currentIndex - 1;
+      const newIndex = state.currentIndex === 0 ? 25 : state.currentIndex - 1;
       return {
-        ...state, current: {...state.current, currentIndex: newIndex}
+        ...state, currentIndex: newIndex
       };
     case ActionTypes.NEXT_LETTER:
-      const newNextIndex = state.current.currentIndex === 25 ? 0 : state.current.currentIndex + 1;
+      const newNextIndex = state.currentIndex === 25 ? 0 : state.currentIndex + 1;
       return {
-        ...state, current: {...state.current, currentIndex: newNextIndex}
+        ...state, currentIndex: newNextIndex
       };
     case ActionTypes.CORRECT_LETTER:
-      const newCorrectIndex = state.current.currentIndex === 25 ? 0 : state.current.currentIndex + 1;
+      const newCorrectIndex = state.currentIndex === 25 ? 0 : state.currentIndex + 1;
       return {
         ...state,
         current: {...state.current, currentIndex: newCorrectIndex},
-        stats: {...state.stats, corList: [...state.stats.corList, state.alphabets[state.currentLanguage][state.current.currentIndex].letter]}
+        stats: {...state.stats, corList: [...state.stats.corList, state.alphabets[state.currentLanguage][state.currentIndex].letter]}
       };
     case ActionTypes.WRONG_LETTER:
-      const newIncorrectIndex = state.current.currentIndex === 25 ? 0 : state.current.currentIndex + 1;
+      const newIncorrectIndex = state.currentIndex === 25 ? 0 : state.currentIndex + 1;
       return {
         ...state,
-        current: {...state.current, currentIndex: newIncorrectIndex},
-        stats: {...state.stats, incList: [...state.stats.incList, state.alphabets[state.currentLanguage][state.current.currentIndex].letter]}
+         currentIndex: newIncorrectIndex,
+        stats: {...state.stats, incList: [...state.stats.incList, state.alphabets[state.currentLanguage][state.currentIndex].letter]}
       };
     case ActionTypes.SKIP_LETTER:
-      const newSkipIndex = state.current.currentIndex === 25 ? 0 : state.current.currentIndex + 1;
+      const newSkipIndex = state.currentIndex === 25 ? 0 : state.currentIndex + 1;
       return {
         ...state,
-        current: {...state.current, currentIndex: newSkipIndex},
-        stats: {...state.stats, pasList: [...state.stats.pasList, state.alphabets[state.currentLanguage][state.current.currentIndex].letter]}
+        currentIndex: newSkipIndex,
+        stats: {...state.stats, pasList: [...state.stats.pasList, state.alphabets[state.currentLanguage][state.currentIndex].letter]}
       };
     case ActionTypes.NEXT_TEST_COUNTER:
       const newNextTestIndex = state.test.testCounter >= 25 ? 0 : state.test.testCounter + 1;
@@ -91,6 +89,12 @@ const alphabet = (state = initialState, action) => {
       return {
         ...state,
         currentCase: action.payload.activeCase,
+      };
+    case ActionTypes.SET_LANGUAGE:
+      return {
+        ...state,
+        currentLanguage: action.payload.lang,
+        currentIndex: 0
       };
     default:
       return state;

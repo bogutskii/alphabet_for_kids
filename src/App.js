@@ -1,12 +1,12 @@
 import React from "react";
 import "./styles.css";
-import Alphabet from "./Comonents/Alphabet";
+import Alphabet from "./Components/Alphabet";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import Navigation from './Comonents/NavBar/Navigation';
-import VideoPlaylist from './Comonents/VideoPlaylist';
-import AboutPage from './Comonents/AboutPage';
-import Test from "./Comonents/test/Test";
-import SequenceTest from "./Comonents/test/SequenceTest";
+import Navigation from './Components/NavBar/Navigation';
+import VideoPlaylist from './Components/VideoPlaylist';
+import AboutPage from './Components/AboutPage';
+import Test from "./Components/test/Test";
+import SequenceTest from "./Components/test/SequenceTest";
 
 function App() {
   return (

@@ -2,8 +2,8 @@ import React from "react";
 import "../alphabet-style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Alpha_line from "./Alpha_line"
-//import Stats from "./Comonents/test/test";
-import Word from "./InitialLetterWord";
+//import Stats from "./Components/test/test";
+import InitialLetterWord from "./InitialLetterWord";
 import {connect} from "react-redux";
 
 const Alphabet = ({letters, currentLanguage, currentIndex, currentCase, effects, previousLetter, nextLetter}) => {
@@ -22,8 +22,9 @@ const Alphabet = ({letters, currentLanguage, currentIndex, currentCase, effects,
     currentLetter = currentLetter[0].toUpperCase()
   }else if(currentCase === 'lower'){
     currentLetter = currentLetter[0].toLowerCase()
-  }else if(currentCase === 'both'){
-    currentLetter = currentLetter[0].toUpperCase() + currentLetter[0].toLowerCase()
+  // }
+  // else if(currentCase === 'both'){
+  //   currentLetter = currentLetter[0].toUpperCase() + currentLetter[0].toLowerCase()
   }
 
   return (
@@ -38,7 +39,7 @@ const Alphabet = ({letters, currentLanguage, currentIndex, currentCase, effects,
           className={`wrap-child-active-50 ${nextEffect}`}
         >
           {currentLetter}
-          <Word/>
+          <InitialLetterWord/>
         </div>
         <a className="wrap-child-active-25" onClick={() => nextLetter(1)} href="#" role="button">
           &#8827;
@@ -52,7 +53,7 @@ const Alphabet = ({letters, currentLanguage, currentIndex, currentCase, effects,
 const mapStateToProps = (state) => ({
   letters: state.alphabets,
   currentLanguage: state.currentLanguage,
-  currentIndex: state.current.currentIndex,
+  currentIndex: state.currentIndex,
   effects: state.effects.classNames,
   currentCase: state.currentCase
 });

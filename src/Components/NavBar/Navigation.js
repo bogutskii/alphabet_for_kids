@@ -1,6 +1,8 @@
 import React from 'react'
 import {NavLink} from "react-router-dom";
 import ControlCase from "../ControlCase";
+import LanguageSelector from "../LanguageSelector";
+import "./header.css"
 
 const Navigation = () => {
   return <div className='navigation'>
@@ -11,7 +13,7 @@ const Navigation = () => {
     <NavLink to='/sequence' className="btn-rose m-1">Sequence</NavLink>
     <div className="app-options">
       <ControlCase/>
-
+      <LanguageSelector/>
 
     </div>
   </div>

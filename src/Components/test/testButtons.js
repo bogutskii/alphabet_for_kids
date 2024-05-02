@@ -14,7 +14,7 @@ const TestButtons = (props) => {
 }
 
 const mapStateToProps = (state) => ({
-    currentIndex: state.current.currentIndex,
+    currentIndex: state.currentIndex,
     stats: state.stats,
     testCounter: state.test.testCounter
 })

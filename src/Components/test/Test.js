@@ -4,7 +4,7 @@ import {connect} from "react-redux";
 import TestButtons from "./testButtons";
 import '../../alphabet-style.css'
 import Stats from "./Stats";
-import ControlCase from "../ControlCase";
+
 
 
 const Test = (props) => {
@@ -12,7 +12,6 @@ const Test = (props) => {
   let randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
   return (
     <div className="test-game-container">
-      <ControlCase/>
       <button className="test-game-button"
               onClick={() => startTest([...alphabets[currentLanguage]].sort(() => Math.random() - 0.5))}>
         {test.testStart ? 'Restart test' : 'Start test'}
