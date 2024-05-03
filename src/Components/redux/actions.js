@@ -7,8 +7,10 @@ export const ActionTypes = {
   SKIP_LETTER: 'SKIP_LETTER',
   NEXT_TEST_COUNTER: 'NEXT_TEST_COUNTER',
   START_TEST: 'START_TEST',
+  STOP_TEST: 'STOP_TEST',
   TOGGLE_CASE: 'TOGGLE_CASE',
   SET_LANGUAGE: 'SET_LANGUAGE'
+
 };
 
 export const changeLetterOnClicked = (index) => ({
@@ -46,6 +48,9 @@ export const nextTestCounter = () => ({
 export const startTest = (value) => ({
   type: ActionTypes.START_TEST,
   payload: {value}
+});
+export const stopTest = () => ({
+  type: ActionTypes.STOP_TEST,
 });
 
 export const toggleCase = (activeCase) => ({

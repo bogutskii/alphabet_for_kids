@@ -5,9 +5,9 @@ import {Button, ButtonGroup} from 'reactstrap'
 const ControlCase =({toggleCase, activeCase})=>{
   return <div className="control-case-btn">
     <ButtonGroup>
-      <Button color="warning" onClick={() => toggleCase("upper")}
+      <Button color="primary" outline onClick={() => toggleCase("upper")}
               active={activeCase === 'upper'}>A</Button>
-      <Button color="warning" onClick={() => toggleCase('lower')}
+      <Button color="primary" outline onClick={() => toggleCase('lower')}
               active={activeCase === 'lower'}>a</Button>
       {/*<Button color="warning" onClick={() => toggleCase('both')} active={activeCase === 'both'}>Aa</Button>*/}
     </ButtonGroup>
@@ -20,6 +20,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
+
   toggleCase: (activeCase) => dispatch({
     type: 'TOGGLE_CASE',
     payload: {

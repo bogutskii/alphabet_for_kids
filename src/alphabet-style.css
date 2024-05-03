@@ -561,7 +561,7 @@
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
     color: #000000;
-    background: #70cdfd; /* Default background */
+    background: #70cdfd;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -582,25 +582,25 @@
 .test-game-button {
     padding: 10px 20px;
     font-size: 16px;
-    margin-bottom: 20px; /* Space between the button and the next element */
+    margin-bottom: 20px;
     cursor: pointer;
 }
 
 .test-display {
-    border: 1px solid #ccc; /* Adds a border around the display area */
+    border: 1px solid #ccc;
     padding: 20px;
-    border-radius: 8px; /* Optional: Rounds the corners */
-    margin-bottom: 20px; /* Space between the display area and the next element */
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .test-letters-list {
-    list-style-type: none; /* Removes default list styling */
+    list-style-type: none;
 }
 .test-letters-list li{
     font-size: 50vh;
 }
 .test-counter {
-    margin-top: 10px; /* Space above the counter display */
+    margin-top: 10px;
 }
 
 .correct_test {

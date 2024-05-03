@@ -4,11 +4,11 @@ import {connect} from "react-redux";
 import TestButtons from "./testButtons";
 import '../../alphabet-style.css'
 import Stats from "./Stats";
-
+import GameOptions from "../Options/GameOptions";
 
 
 const Test = (props) => {
-  const { currentLanguage, alphabets, test, startTest} = props;
+  const {currentLanguage, alphabets, test, startTest, stopTest} = props;
   let randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
   return (
     <div className="test-game-container">
@@ -16,6 +16,13 @@ const Test = (props) => {
               onClick={() => startTest([...alphabets[currentLanguage]].sort(() => Math.random() - 0.5))}>
         {test.testStart ? 'Restart test' : 'Start test'}
       </button>
+
+      {test.testStart && <button className="test-game-button"
+                                 onClick={stopTest}>
+        {'Stop'}
+      </button>}
+
+      {!test.testStart && <GameOptions/>}
       {test.testStart &&
         <div className="wrap-child-active-50" style={{color: randomColor}}>
           <ul className="test-letters-list">
@@ -24,7 +31,6 @@ const Test = (props) => {
         </div>
       }
       <div className='test-game-options'>
-
         {test.testStart && <TestButtons/>}
         {test.testStart && <h3 className="test-counter">Left: {26 - test.testCounter}</h3>}
       </div>
@@ -42,7 +48,7 @@ const mapStateToProps = (state) => ({
   currentLanguage: state.currentLanguage,
 
 
-  })
+})
 
 const mapDispatchToProps = (dispatch) => ({
   nextTest: (value) => dispatch({
@@ -57,6 +63,9 @@ const mapDispatchToProps = (dispatch) => ({
       value: value
     }
   }),
+  stopTest: () => dispatch({
+    type: 'STOP_TEST'
+  })
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Test);

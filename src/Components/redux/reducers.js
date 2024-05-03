@@ -84,6 +84,10 @@ const alphabet = (state = initialState, action) => {
         ...state,
         test: {...state.test, testCounter: 0, testStart: true},
         stats: {showStats: false, correct: 0, incorrect: 0, skip: 0, corList: [], incList: [], pasList: []}
+      };case ActionTypes.STOP_TEST:
+      return {
+        ...state,
+        test: {...state.test, testCounter: 0, testStart: false}
       };
     case ActionTypes.TOGGLE_CASE:
       return {

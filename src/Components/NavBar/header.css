@@ -1,3 +1,9 @@
-.app-options{
+
+.navigation {
     display: flex;
+    width: 100%;
+    /*margin-left: 40px;*/
+    margin: 10px 0 20px 40px;
+    justify-content: space-between;
 }
+

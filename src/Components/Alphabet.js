@@ -5,6 +5,7 @@ import Alpha_line from "./Alpha_line"
 //import Stats from "./Components/test/test";
 import InitialLetterWord from "./InitialLetterWord";
 import {connect} from "react-redux";
+import GameOptions from "./Options/GameOptions";
 
 const Alphabet = ({letters, currentLanguage, currentIndex, currentCase, effects, previousLetter, nextLetter}) => {
   let randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
@@ -29,6 +30,7 @@ const Alphabet = ({letters, currentLanguage, currentIndex, currentCase, effects,
 
   return (
     <div className="content" tabIndex="0" onKeyDown={checkKey} style={{outline: "none"}}>
+      <GameOptions/>
       <Alpha_line/>
       <div className="wrap">
         <a className="wrap-child-active-25" onClick={() => previousLetter(-1)} href="#" role="button">

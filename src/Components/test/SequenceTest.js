@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import './SequenceTest.css';
+import GameOptions from "../Options/GameOptions";
 
 const generateSequenceQuestion = (letters) => {
   const alphabet = letters.map(letter => letter.letter);
@@ -32,7 +33,7 @@ const generateSequenceQuestion = (letters) => {
   };
 };
 
-const SequenceTest = ({ alphabet }) => {
+const SequenceTest = ({ alphabet,currentLanguage }) => {
   const [testState, setTestState] = useState({
     currentQuestion: '',
     formattedQuestion: [],
@@ -50,7 +51,7 @@ const SequenceTest = ({ alphabet }) => {
   }, [alphabet]);
 
   const startTest = () => {
-    const question = generateSequenceQuestion(alphabet);
+    const question = generateSequenceQuestion(alphabet[currentLanguage]);
     setTestState({
       ...testState,
       currentQuestion: question.question,
@@ -81,6 +82,7 @@ const SequenceTest = ({ alphabet }) => {
   return (
     <div className="sequence-game-container">
       <h1 className="sequence-game-title">Sequence Letters</h1>
+      <GameOptions showCase={false}/>
       <p className="sequence-game-question">
         {testState.formattedQuestion.map((item, index) => (
           <span key={index} style={{
@@ -114,7 +116,8 @@ const SequenceTest = ({ alphabet }) => {
 };
 
 const mapStateToProps = (state) => ({
-  alphabet: state.alphabets
+  alphabet: state.alphabets,
+  currentLanguage: state.currentLanguage
 });
 
 export default connect(mapStateToProps)(SequenceTest);

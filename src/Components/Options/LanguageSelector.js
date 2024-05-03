@@ -1,9 +1,9 @@
 import React from 'react';
-import flagRU from '../languages/flags/ru.png';
-import flagUA from '../languages/flags/ua.png';
-import flagEN from '../languages/flags/us.png';
+import flagRU from '../../languages/flags/ru.png';
+import flagUA from '../../languages/flags/ua.png';
+import flagEN from '../../languages/flags/us.png';
 import Select from 'react-select';
-import { setLanguage } from './redux/actions';
+import { setLanguage } from '../redux/actions';
 import {connect} from "react-redux";
 function LanguageSelector({ currentLanguage, setLanguage }) {
   const options = [

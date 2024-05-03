@@ -24,11 +24,11 @@
     cursor: pointer;
     background-color: #fcfbbd;
     border: 1px solid #ccc;
-    aspect-ratio: 1 / 1; /* Задаём пропорцию квадрата */
+    aspect-ratio: 1 / 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: calc(2vw + 1vh); /* Адаптивный размер шрифта */
+    font-size: calc(2vw + 1vh);
     padding: 2px 8px;
     border-radius: 5px;
     width: 100%;

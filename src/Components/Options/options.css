@@ -1,0 +1,68 @@
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 80px; /* увеличим ширину для лучшей видимости */
+    height: 34px; /* высота переключателя */
+    background-color: #ccc; /* серый цвет фона для неактивного состояния */
+    border-radius: 17px; /* скругление краев */
+    transition: background-color 0.4s;
+}
+
+.switch input {
+    display: none; /* скрыть чекбокс */
+}
+
+.slider {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-color: white; /* фон слайдера */
+    border-radius: 15px; /* скругление слайдера */
+    transition: .4s;
+    display: flex;
+    justify-content: space-between; /* элементы внутри слайдера размещаем по краям */
+    padding: 0 10px; /* отступы */
+    box-sizing: border-box;
+}
+
+.slider::before, .slider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    font-weight: bold;
+    transition: color 0.4s, transform 0.4s;
+}
+
+.slider::before {
+    content: 'A'; /* текст для верхнего регистра */
+    left: 10px; /* позиционируем слева */
+}
+
+.slider::after {
+    content: 'a'; /* текст для нижнего регистра */
+    right: 10px; /* позиционируем справа */
+}
+
+input:checked + .slider::before {
+    transform: translateY(-50%) translateX(20px); /* смещаем большую букву A вправо */
+    color: gray; /* делаем текст серым если неактивен */
+}
+
+input:checked + .slider::after {
+    transform: translateY(-50%) translateX(-20px); /* смещаем маленькую букву a влево */
+    color: black; /* делаем текст черным если активен */
+}
+
+input:checked + .slider {
+    background-color: #4CAF50; /* зеленый фон когда 'a' активен */
+}
+
+
+.app-options{
+    display: flex;
+    margin-right: 80px;
+}

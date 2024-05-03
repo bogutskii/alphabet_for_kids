@@ -5,43 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e422858b-f9c1-4d8c-9d78-bff56406bdc4" name="Changes" comment="-add Ukrainian and Russian Alp">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/LanguageSelector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/NavBar/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/languages/flags/cz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/languages/flags/de.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/languages/flags/es.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/languages/flags/kz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/languages/flags/lt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/languages/flags/ro.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/languages/flags/ru.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/languages/flags/ua.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/languages/flags/us.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Options/GameOptions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Options/options.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/AboutPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/Alpha_line.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Alpha_line.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/Alphabet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Alphabet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/ControlCase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ControlCase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/InitialLetterWord.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/InitialLetterWord.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/NavBar/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NavBar/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/VideoPlaylist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/VideoPlaylist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/redux/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/redux/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/redux/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/redux/reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/redux/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/test/Accordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/test/Accordion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/test/SequenceTest.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/test/SequenceTest.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/test/SequenceTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/test/SequenceTest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/test/Stats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/test/Stats.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/test/Test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/test/Test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/test/accordion.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/test/accordion.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/test/testButtons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/test/testButtons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Comonents/upperLineAlph.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/upperLineAlph.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/languages/english.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/english.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/languages/russian.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/russian.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/languages/ukrainian.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/languages/ukrainian.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Alphabet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Alphabet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ControlCase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Options/ControlCase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/LanguageSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Options/LanguageSelector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/NavBar/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NavBar/Navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/NavBar/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NavBar/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/redux/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/redux/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/redux/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/redux/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/test/SequenceTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/test/SequenceTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/test/Test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/test/Test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/upperLineAlph.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/upperLineAlph.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/alphabet-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/alphabet-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,20 +29,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
+        <option value="TypeScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "bogutskii"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;bogutskii&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -90,28 +69,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.start.executor": "Run",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.deploy.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/admin/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/233.14015.89/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Components/Options" />
       <recent name="$PROJECT_DIR$/src/Components" />
       <recent name="$PROJECT_DIR$/src/languages/flags" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.start">
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -125,6 +118,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.deploy" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +134,8 @@
       <workItem from="1714411909357" duration="468000" />
       <workItem from="1714412445672" duration="991000" />
       <workItem from="1714414251290" duration="482000" />
-      <workItem from="1714415939042" duration="17722000" />
+      <workItem from="1714415939042" duration="24734000" />
+      <workItem from="1714687260787" duration="4889000" />
     </task>
     <task id="LOCAL-00001" summary="fix upper line sq form">
       <option name="closed" value="true" />
@@ -150,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714521387772</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="-add Ukrainian and Russian Alp">
+      <option name="closed" value="true" />
+      <created>1714619303091</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714619303091</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
