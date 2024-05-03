@@ -1,5 +1,3 @@
-
-
 # alphabet_for_kids
 [Visit Alphabet Learning App!](https://alphabetlearn.netlify.app/) on Netlify
 
