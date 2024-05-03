@@ -1,4 +1,13 @@
+
+
 # alphabet_for_kids
+[Visit Alphabet Learning App!](https://alphabetlearn.netlify.app/) on Netlify
+
+OR
+
+[App on GitHub Pages (Note: Routing may not work correctly)](https://bogutskii.github.io/alphabet_for_kids/)
+
+
 
 MIT License
 
