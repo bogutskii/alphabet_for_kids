@@ -15,9 +15,9 @@ function App() {
         <Navigation/>
         <Routes>
           <Route exact path="/" element={<Alphabet/>}/>
-          <Route path="/Video" element={<VideoPlaylist/>}/>
-          <Route path="/Test" element={<Test/>}/>
-          <Route path="/AboutPage" element={<AboutPage/>}/>
+          <Route path="/video" element={<VideoPlaylist/>}/>
+          <Route path="/test" element={<Test/>}/>
+          <Route path="/about" element={<AboutPage/>}/>
           <Route path="/sequence" element={<SequenceTest/>}/>
         </Routes>
       </div>
