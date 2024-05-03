@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.759e256d.css",
-    "main.js": "/static/js/main.58b6314b.js",
-    "index.html": "/index.html",
-    "main.759e256d.css.map": "/static/css/main.759e256d.css.map",
-    "main.58b6314b.js.map": "/static/js/main.58b6314b.js.map"
+    "main.css": "/alphabet_for_kids/static/css/main.759e256d.css",
+    "main.js": "/alphabet_for_kids/static/js/main.58b6314b.js",
+    "index.html": "/alphabet_for_kids/index.html",
+    "main.759e256d.css.map": "/alphabet_for_kids/static/css/main.759e256d.css.map",
+    "main.58b6314b.js.map": "/alphabet_for_kids/static/js/main.58b6314b.js.map"
   },
   "entrypoints": [
     "static/css/main.759e256d.css",
