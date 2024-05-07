@@ -2,7 +2,7 @@ import React from "react";
 // import Accordion from "../Accordion"
 import {connect} from "react-redux";
 import TestButtons from "./testButtons";
-import '../../alphabet-style.css'
+import '../Alphabet.css'
 import Stats from "./Stats";
 import GameOptions from "../Options/GameOptions";
 

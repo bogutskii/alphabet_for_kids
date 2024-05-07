@@ -1,5 +1,5 @@
 import React from "react";
-import "./upperLineAlph.css";
+import "./Alpha_line.css";
 import {connect} from "react-redux";
 
 const Alpha_line = ({letters,currentLanguage, current, changeLetterOnClicked}) => {

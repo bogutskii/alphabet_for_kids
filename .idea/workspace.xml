@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e422858b-f9c1-4d8c-9d78-bff56406bdc4" name="Changes" comment="-add Ukrainian and Russian Alp">
-      <change afterPath="$PROJECT_DIR$/src/Components/Options/GameOptions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Options/options.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Alpha_line.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Alpha_line.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Alphabet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Alphabet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ControlCase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Options/ControlCase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/LanguageSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Options/LanguageSelector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/NavBar/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NavBar/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/NavBar/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NavBar/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/redux/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/redux/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/redux/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/redux/reducers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/test/SequenceTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/test/SequenceTest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/test/Test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/test/Test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/upperLineAlph.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/upperLineAlph.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/alphabet-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/alphabet-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/test/accordion.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/test/accordion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/test/testButtons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/test/testButtons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/upperLineAlph.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Alpha_line.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/alphabet-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Alphabet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,8 +83,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Components/Options" />
       <recent name="$PROJECT_DIR$/src/Components" />
+      <recent name="$PROJECT_DIR$/src/Components/Options" />
       <recent name="$PROJECT_DIR$/src/languages/flags" />
     </key>
   </component>

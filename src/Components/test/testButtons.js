@@ -1,5 +1,5 @@
 import React from "react";
-import '../../alphabet-style.css'
+import '../Alphabet.css'
 import {connect} from "react-redux";
 
 const TestButtons = (props) => {

@@ -3,7 +3,7 @@
     align-items: center;
     align-content: center;
     flex-flow: row nowrap;
-    height: 70vh;
+    height: 45vh;
     width: 100vw;
     justify-content: space-between;
 }
@@ -18,6 +18,7 @@
     font-size: 50vh;
     text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff,
     1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    z-index: -1;
 }
 
 
@@ -597,7 +598,7 @@
     list-style-type: none;
 }
 .test-letters-list li{
-    font-size: 50vh;
+    font-size: 40vh;
 }
 .test-counter {
     margin-top: 10px;

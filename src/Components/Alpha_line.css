@@ -18,6 +18,9 @@
     }
 
 }
+.center-div {
+    margin: 0 auto;
+}
 
 .letterSquare {
     position: relative;

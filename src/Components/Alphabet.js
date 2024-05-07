@@ -1,5 +1,5 @@
 import React from "react";
-import "../alphabet-style.css";
+import "./Alphabet.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Alpha_line from "./Alpha_line"
 //import Stats from "./Components/test/test";
