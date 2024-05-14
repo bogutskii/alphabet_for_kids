@@ -68,3 +68,10 @@
 .letterSquare.vowels.selected {
     color: red;
 }
+
+
+@media (max-height: 900px) {
+    .letterSquare {
+        font-size: calc(1vw + 1vh);
+    }
+}
