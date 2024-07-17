@@ -561,6 +561,7 @@
     color: #000000;
     background: #70cdfd;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 50;
 }
 
 .test-game-button:hover {
